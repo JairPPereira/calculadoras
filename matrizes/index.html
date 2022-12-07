@@ -1,341 +1,444 @@
-<!DOCTYPE html>
-<html lang="pt" dir="ltr" data-version-tag="?20221031T220401Z" data-root-path="/">
+<!doctype html>
+	
+<html lang="pt" manifest="dozapro.appcache" dir="ltr">
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="application-name" content="matrixcalc" />
-  <meta name="theme-color" content="#2B5797" />
+	<meta charset="utf-8">
+	
+		<!-- top with site name -->
+	
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="https://jpcalculadoras-one.vercel.app/matrizes/ie8.js?20221031T220401Z"></script>
+	<!-- logo icon -->
+	<link rel="shortcut icon" href="https://jpp-ap.onrender.com/matrizes/menu/img/favicon.ico" type="image/x-icon"/>
+	<link rel="apple-touch-icon" href="https://jpp-ap.onrender.com/matrizes/menu/img/icon.ico" />
+	<link rel="apple-touch-icon" sizes="192x192" href="/menu/img/icon_apple.png">
+	<meta name="msapplication-TileImage" content="/menu/img/icon_apple.png">
+	
+	<link rel="icon" type="image/png" sizes="192x192" href="https://jpp-ap.onrender.com/matrizes/menu/img/icon_apple.png">
+	<link rel="icon" type="image/png" sizes="128x128" href="https://jpp-ap.onrender.com/matrizes/menu/img/icon_128.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="https://jpp-ap.onrender.com/matrizes/menu/img/icon_64.png">
+	<link rel="icon" type="image/png" sizes="56x56" href="https://jpp-ap.onrender.com/matrizes/menu/img/icon_56.png">
+	<link rel="icon" type="image/png" sizes="48x48" href="https://jpp-ap.onrender.com/matrizes/menu/img/icon_48.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://jpp-ap.onrender.com/matrizes/menu/img/icon_32.png">
 
-    <script src="https://jpcalculadoras-one.vercel.app/matrizes/mjs.orig.js"></script>
- 
-  <script defer src="https://jpcalculadoras-one.vercel.app/matrizes/i18n-pt.js?20221031T220401Z"></script>
-  <link rel="preload" href="https://jpcalculadoras-one.vercel.app/matrizes/i18n-pt.json?20221031T220401Z" as="fetch" crossorigin="anonymous" />
-  <script defer src="https://jpcalculadoras-one.vercel.app/matrizes/mjs.js?20221031T220401Z"></script>
-  <!--<script async src="../compiled.expression.js?20221031T220401Z"></script>-->
+	<!-- styles css -->
+	<link rel="stylesheet" type="text/css" href="https://jpp-ap.onrender.com/matrizes/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="https://jpp-ap.onrender.com/matrizes/css/structure.css">
+	<link rel="stylesheet" type="text/css" href="https://jpp-ap.onrender.com/matrizes/css/media-structure.css">
+	<link rel="stylesheet" type="text/css" href="https://jpp-ap.onrender.com/matrizes/css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://jpp-ap.onrender.com/matrizes/css/media-style.css">
+	<link rel="stylesheet" type="text/css" href="https://jpp-ap.onrender.com/matrizes/css/menu.css">	<!-- top menu including option for mobile devices -->
+	<link rel="stylesheet" type="text/css" href="https://jpp-ap.onrender.com/matrizes/modules/lightbox/dist/css/lightbox.css">	<!-- connect the module to view images -->
+	<link rel="stylesheet" href="https://jpp-ap.onrender.com/matrizes/css/jquery.modal.css" /><!-- modal windows -->
+	
+<!-- variables for home page paths and for other pages -->
+	
+	<link rel="stylesheet" type="text/css" href="https://jpp-ap.onrender.com/matrizes/art/math/matrix/css/style_matrix.css" >
 
-  <link rel="alternate" hreflang="ar" href="https://matrixcalc.org/ar/" />
-  <link rel="alternate" hreflang="bg" href="https://matrixcalc.org/bg/" />
-  <link rel="alternate" hreflang="ca" href="https://matrixcalc.org/ca/" />
-  <link rel="alternate" hreflang="cs" href="https://matrixcalc.org/cs/" />
-  <link rel="alternate" hreflang="de" href="https://matrixcalc.org/de/" />
-  <link rel="alternate" hreflang="en" href="https://matrixcalc.org/" />
-  <link rel="alternate" hreflang="es" href="https://matrixcalc.org/es/" />
-  <link rel="alternate" hreflang="fa" href="https://matrixcalc.org/fa/" />
-  <link rel="alternate" hreflang="fr" href="https://matrixcalc.org/fr/" />
-  <link rel="alternate" hreflang="gl" href="https://matrixcalc.org/gl/" />
-  <link rel="alternate" hreflang="it" href="https://matrixcalc.org/it/" />
-  <link rel="alternate" hreflang="ja" href="https://matrixcalc.org/ja/" />
-  <link rel="alternate" hreflang="ko" href="https://matrixcalc.org/ko/" />
-  <link rel="alternate" hreflang="mk" href="https://matrixcalc.org/mk/" />
-  <link rel="alternate" hreflang="nl" href="https://matrixcalc.org/nl/" />
-  <link rel="alternate" hreflang="no" href="https://matrixcalc.org/no/" />
-  <link rel="alternate" hreflang="pl" href="https://matrixcalc.org/pl/" />
-  <link rel="alternate" hreflang="pt" href="https://matrixcalc.org/pt/" />
-  <link rel="alternate" hreflang="ro" href="https://matrixcalc.org/ro/" />
-  <link rel="alternate" hreflang="ru" href="https://matrixcalc.org/ru/" />
-  <link rel="alternate" hreflang="sk" href="https://matrixcalc.org/sk/" />
-  <link rel="alternate" hreflang="tr" href="https://matrixcalc.org/tr/" />
-  <link rel="alternate" hreflang="uk" href="https://matrixcalc.org/uk/" />
-  <link rel="alternate" hreflang="ur" href="https://matrixcalc.org/ur/" />
-  <link rel="alternate" hreflang="vi" href="https://matrixcalc.org/vi/" />
-  <link rel="alternate" hreflang="zh" href="https://matrixcalc.org/zh/" />
-  <link rel="canonical" href="https://matrixcalc.org/pt/" />
+	<script defer="" src="https://jpp-ap.onrender.com/matrizes/art/math/matrix/js/pt/title-matrix-pt.js"></script>
+	<script defer="" src="https://jpp-ap.onrender.com/matrizes/art/math/matrix/js/calculation.js"></script>	
 
+	<title>Calculadora de matriz</title>
+	<meta name="title" content="Calculadora de matriz">
 
-  <link rel="manifest" href="https://jpcalculadoras-one.vercel.app/matrizes/manifest.json" />
-  <link rel="icon" type="image/x-icon" sizes="16x16" href="../favicon.ico" />
-  <link rel="icon" type="image/svg+xml" sizes="16x16" href="../favicon.svg" />
-  <link href="https://jpcalculadoras-one.vercel.app/matrizes/mcss.css" rel="stylesheet" type="text/css" />
-  <link rel="apple-touch-icon" href="https://jpp-ap.onrender.com/imgs/launcher-192x192.png" />
+    <meta name="keywords" content="calculadora de matriz, multiplicação de matrizes, matrizes e determinantes, matriz matemática">
+    <meta name="description" content="Calculadora de matriz para soluções graduais para operações matriciais, gratuitas online. Explicações detalhadas são fornecidas para todos os cálculos." />    
+    
+    <link rel="canonical" href="https://jpp-ap.onrender.com/matrizes/" /> 
+	   
+	<link rel="image_src" href="/matrix/img/matrix-0-pt.jpg" />	
 
-  <!--<script src="./page.js"></script>-->
-
-
-  <title>Calculadora de Matrizes</title>
-  <meta name="description" content="Cálculo de produto de matrices, matriz inversa, de determinantes, de posto, de matriz transpuesta, de autovalores e autovetores; redução a um modelo diagonal, triangular,; Exponenciação (Potenciação)" />
+	
 </head>
-<body>
-<header id="header">
-  <div id="logo"><a href="./">Matrix calculator</a></div>
-  <nav id="language">
-    <button type="button" id="language-popup-button" class="popup-button" data-menu="language-popup" aria-haspopup="true" lang="en" title="Language"></button>
-    <div id="language-popup" class="menu-dialog" role="menu">
-      <a href="../ar/" hreflang="ar" title="Árabe" class="menuitem" role="menuitem"><span lang="ar" dir="rtl">العربية</span></a><!--
-          --><a href="../bg/" hreflang="bg" title="Búlgaro" class="menuitem" role="menuitem"><span lang="bg" dir="ltr">Български</span></a><!--
-          --><a href="../ca/" hreflang="ca" title="Catalão" class="menuitem" role="menuitem"><span lang="ca" dir="ltr">Català</span></a><!--
-          --><a href="../cs/" hreflang="cs" title="Tcheco" class="menuitem" role="menuitem"><span lang="cs" dir="ltr">Čeština</span></a><!--
-          --><a href="../de/" hreflang="de" title="Alemão" class="menuitem" role="menuitem"><span lang="de" dir="ltr">Deutsch</span></a><!--
-          --><a href="./" hreflang="en" title="Inglês" class="menuitem" role="menuitem"><span lang="en" dir="ltr">English</span></a><!--
-          --><a href="../es/" hreflang="es" title="Espanhol" class="menuitem" role="menuitem"><span lang="es" dir="ltr">Español</span></a><!--
-          --><a href="../fa/" hreflang="fa" title="Persa" class="menuitem" role="menuitem"><span lang="fa" dir="rtl">فارسی</span></a><!--
-          --><a href="../fr/" hreflang="fr" title="Francês" class="menuitem" role="menuitem"><span lang="fr" dir="ltr">Français</span></a><!--
-          --><a href="../gl/" hreflang="gl" title="Galego" class="menuitem" role="menuitem"><span lang="gl" dir="ltr">Galego</span></a><!--
-          --><a href="../it/" hreflang="it" title="Italiano" class="menuitem" role="menuitem"><span lang="it" dir="ltr">Italiano</span></a><!--
-          --><a href="../ja/" hreflang="ja" title="Japonês" class="menuitem" role="menuitem"><span lang="ja" dir="ltr">日本語</span></a><!--
-          --><a href="../ko/" hreflang="ko" title="Coreano" class="menuitem" role="menuitem"><span lang="ko" dir="ltr">한국어</span></a><!--
-          --><a href="../mk/" hreflang="mk" title="Macedônio" class="menuitem" role="menuitem"><span lang="mk" dir="ltr">Македонски</span></a><!--
-          --><a href="../nl/" hreflang="nl" title="Holandês" class="menuitem" role="menuitem"><span lang="nl" dir="ltr">Nederlands</span></a><!--
-          --><a href="../no/" hreflang="no" title="Norueguês" class="menuitem" role="menuitem"><span lang="no" dir="ltr">Norsk</span></a><!--
-          --><a href="../pl/" hreflang="pl" title="Polonês" class="menuitem" role="menuitem"><span lang="pl" dir="ltr">Polski</span></a><!--
-          --><a href="../pt/" hreflang="pt" title="Português" class="menuitem" role="menuitem" aria-current="page"><span lang="pt" dir="ltr">Português</span></a><!--
-          --><a href="../ro/" hreflang="ro" title="Romeno" class="menuitem" role="menuitem"><span lang="ro" dir="ltr">Română</span></a><!--
-          --><a href="../ru/" hreflang="ru" title="Russo" class="menuitem" role="menuitem"><span lang="ru" dir="ltr">Русский</span></a><!--
-          --><a href="../sk/" hreflang="sk" title="Eslovaco" class="menuitem" role="menuitem"><span lang="sk" dir="ltr">Slovenčina</span></a><!--
-          --><a href="../tr/" hreflang="tr" title="Turco" class="menuitem" role="menuitem"><span lang="tr" dir="ltr">Türkçe</span></a><!--
-          --><a href="../uk/" hreflang="uk" title="Ucraniano" class="menuitem" role="menuitem"><span lang="uk" dir="ltr">Українська</span></a><!--
-          --><a href="../ur/" hreflang="ur" title="Urdu" class="menuitem" role="menuitem"><span lang="ur" dir="rtl">اردو</span></a><!--
-          --><a href="../vi/" hreflang="vi" title="Vietnamita" class="menuitem" role="menuitem"><span lang="vi" dir="ltr">Tiếng Việt</span></a><!--
-          --><a href="../zh/" hreflang="zh" title="Chinês" class="menuitem" role="menuitem"><span lang="zh" dir="ltr">中文(繁體)</span></a>
-    </div>
-  </nav>
-</header>
+<body class="">
+	
+	<div class="container">
+		
+			
+	<noscript>
+		<p style="text-align: center;">Para a funcionalidade completa do site, é desejável habilitar o JavaScript nas configurações do seu navegador.</p><br>
+	</noscript>
+			
+		<header>
+			<div class="header-img-box">
+				
+				<div class="logo-site-box">
+					<p>Matrizes</p>				</div>	<!-- /logo-site-box -->
+			</div>	<!-- /header-img-box -->
 
-<div id="bigtable">
-  <div id="left">
-    <nav class="menu"><!--
-    --><a href="./">Operações envolvendo matrizes</a><!--
-    --><a href="slu.html">Soluções de Sistemas de Equações Lineares</a><!--
-    --><a href="det.html">Calculadora de determinantes</a><!--
-    --><a href="vectors.html">Cálculo dos autovalores próprios e vectores próprios</a><!--
-    --><a href="ex.html" class="langRuOnly" hreflang="ru">Exemplos de soluções</a><!--
-    --><a href="https://pt.wikipedia.org/wiki/Matriz_(matemática)">Teoria necessária</a><!--
-    --></nav>
+			<nav class="menu-up-box-2 ">
+				<ul class="topmenu">
+						
+				<li><a href="https://jpp-ap.onrender.com/calculadoras/">Home</a></li>	
+							
+					
+					<li>
+						<a class="submenu-link">Geometria</a>
+						<ul class="submenu">
+							
+	<li><a href="https://jpp-ap.onrender.com/calculadoras/area-parallelogram.html">A área do paralelogramo</a></li>
+	<li><a href="https://jpp-ap.onrender.com/calculadoras/area-rectangle.html">Área do retângulo</a></li>
+	<li><a href="/art/math/geometry/pt/area-rhombus">Área de um losango</a></li>
+	<li><a href="/art/math/geometry/pt/area-square">Área de um quadrado</a></li>
+	<li><a href="/art/math/geometry/pt/area-trapezium">Área do trapézio</a></li>
+	<li><a href="/art/math/geometry/pt/area-triangle">A área do triângulo</a></li>
+	<li><a href="/art/math/geometry/pt/area-circle">Área do círculo</a></li>
+	<li><a href="/art/math/geometry/pt/area-tetragon">Quadrangle area</a></li>
+	<li><a href="/art/math/geometry/pt/trig-formulas">Fórmulas de trigonometria</a></li>		
+						</ul><!-- /submenu-->	
+					</li>				
+		
 
-
-
-
-    <aside>
-      <div class="ads-container">
-        <div class="adsbygoogle-container">
-          <!-- unit1 -->
-          <ins class="adsbygoogle"
-               data-ad-client="ca-pub-2322099551790862"
-               data-ad-slot="6667750747"
-               data-ad-format="auto"
-               data-full-width-responsive="true"></ins>
-        </div>
-        <div>
-          <button type="button" class="toggle-ads-button">
-            <span>Ocultar anúncios</span>
-            <span hidden>Mostrar anúncios</span>
-          </button>
-        </div>
-      </div>
-    </aside>
-
-  </div>
-<div id="right">
-<main>
-<form class="main">
-  <div class="tdmatrix">
-    <fieldset>
-      <legend align="center">Matriz A:</legend>
-      <div class="insert-table" data-id="A" data-sizes="3x3" data-type="simple"></div>
-    </fieldset>
-    <div role="region" aria-label="Operações com a matriz A" class="bbox"><!--
-    --><button type="button" class="expression-button" data-expression="determinant A">Determinante</button><!--
-    --><button type="button" class="expression-button" data-expression="A^-1">Matriz Inversa</button><!--
-    --><button type="button" class="expression-button" data-expression="transpose A">Matriz Transposta</button><!--
-    --><button type="button" class="expression-button" data-expression="rank A">Posto</button><!--
-    --><span class="button-before-input"><button type="button" class="expression-button" data-expression="k * A">Multiplicar por</button><span class="a-input"><input id="k-A-m" name="k-A-m" type="text" autocapitalize="off" inputmode="numeric" spellcheck="false" class="fraction-input" value="2" title="multiplier" /></span></span><!--
-    --><button type="button" class="expression-button" data-expression="Gaussian-elimination A">Matriz Triangular</button><!--
-    --><button type="button" class="expression-button" data-expression="diagonalize A">Matriz Diagonal</button><!--
-    --><span class="button-before-input"><button type="button" class="expression-button" data-expression="A ^ k">Elevado a</button><span class="a-input"><input id="k-A-e" name="k-A-e" type="text" autocapitalize="off" inputmode="numeric" spellcheck="false" class="fraction-input" value="2" pattern="[\d\+\-\*\/\^\(\)n]*" list="exponentiation-list" title="power" /></span></span><!--
-    --><button type="button" class="expression-button" data-expression="LU-decomposition A">Decomposição LU</button><!--
-    --><button type="button" class="expression-button" data-expression="Cholesky-decomposition A">Fatoração de Cholesky</button><!--
-    --></div>
-  </div>
-  <div role="group" class="bbox2">
-    <button type="button" class="change-button" data-for1="A" data-for2="B" title="Trocar A e B">&larr;<br />&rarr;</button>
-    <div>
-      <button type="button" class="expression-button" data-expression="A * B" title="Multiplicação">A<span class="operator">&times;</span>B</button><!--
-      --><button type="button" class="expression-button" data-expression="A + B" title="Adição">A<span class="operator">+</span>B</button><!--
-      --><button type="button" class="expression-button" data-expression="A - B" title="Subtração">A<span class="operator">&minus;</span>B</button>
-    </div>
-  </div>
-  <div class="tdmatrix">
-    <fieldset>
-      <legend align="center">Matriz B:</legend>
-      <div class="insert-table" data-id="B" data-sizes="3x3" data-type="simple"></div>
-    </fieldset>
-    <div role="region" aria-label="Operações com a matriz B" class="bbox"><!--
-    --><button type="button" class="expression-button" data-expression="determinant B">Determinante</button><!--
-    --><button type="button" class="expression-button" data-expression="B^-1">Matriz Inversa</button><!--
-    --><button type="button" class="expression-button" data-expression="transpose B">Matriz Transposta</button><!--
-    --><button type="button" class="expression-button" data-expression="rank B">Posto</button><!--
-    --><span class="button-before-input"><button type="button" class="expression-button" data-expression="k * B">Multiplicar por</button><span class="a-input"><input id="k-B-m" name="k-B-m" type="text" autocapitalize="off" inputmode="numeric" spellcheck="false" class="fraction-input" value="2" title="multiplier" /></span></span><!--
-    --><button type="button" class="expression-button" data-expression="Gaussian-elimination B">Matriz Triangular</button><!--
-    --><button type="button" class="expression-button" data-expression="diagonalize B">Matriz Diagonal</button><!--
-    --><span class="button-before-input"><button type="button" class="expression-button" data-expression="B ^ k">Elevado a</button><span class="a-input"><input id="k-B-e" name="k-B-e" type="text" autocapitalize="off" inputmode="numeric" spellcheck="false" class="fraction-input" value="2" pattern="[\d\+\-\*\/\^\(\)n]*" list="exponentiation-list" title="power" /></span></span><!--
-    --><button type="button" class="expression-button" data-expression="LU-decomposition B">Decomposição LU</button><!--
-    --><button type="button" class="expression-button" data-expression="Cholesky-decomposition B">Fatoração de Cholesky</button><!--
-    --></div>
-  </div>
-</form>
-<datalist id="exponentiation-list" hidden>
-  <option>2</option>
-  <option>n</option>
-  <option>1/2</option>
-  <option>1/n</option>
-  <option>∞</option>
-</datalist>
-<div translate="no" dir="ltr">
-  <form class="expression-input-container">
-    <span class="button-after-input">
-      <datalist id="expressions-list" hidden>
-        <option>A*X=B</option>
-        <option>A^-1</option>
-        <option>{{1,2,3},{4,5,6},{7,2,9}}^(-1)</option>
-        <option>A*X=B, Y+A=B</option>
-        <option label="Adjugate of A">adjugate(A)</option>
-        <option label="Determinante">determinant(A)</option>
-        <option label="Posto">rank(A)</option>
-        <option label="Matriz Transposta">transpose(A)</option>
-        <option label="Decomposição em valores singulares">svd A</option>
-        <option label="Decomposição QR de A">QR-decomposition A</option>
-        <option label="Exponencial de matrizes">exp(A)</option>
-        <option label="Matrix Logarithm">log(A)</option>
-        <option label="Matrix Sine">sin(A)</option>
-        <option label="Matrix Cosine">cos(A)</option>
-        <option label="Inverse Matrix Tangent">arctan(A)</option>
-      </datalist>
-      <span class="a-input">
-        <input id="expression"
-               name="expression"
-               type="text"
-               autocapitalize="off"
-               autocomplete="on"
-               spellcheck="false"
-               title="Campo de entrada da expressão"
-               class="expression-input unfocused-placeholder"
-               placeholder="2A+3B"
-               list="expressions-list" />
-      </span><!--
-      --><button type="submit" class="expression-input-button">
-        <span class="operator">=</span>
-      </button>
-    </span>
-  </form>
-</div>
-<div class="line">
-
-    <div class="decimal-fraction-digits-controls"><!--
-    --><input type="checkbox" id="decfraccheckbox" /><!--
-    --><label for="decfraccheckbox">Mostrar números decimais</label><!--
-    --><span hidden id="frdigitsspan"><!--
-      --><span>, </span><!--
-      --><label for="frdigits"><!--
-        --><select id="rounding-type"><!--
-          --><option value="fractionDigits" selected>number of fraction digits: </option><!--
-          --><option value="significantDigits">a quantidade de dígitos significantes: </option><!--
-        --></select><!--
-      --></label><!--
-      --><input type="number" min="1" step="1" id="frdigits" value="3" /><!--
-    --></span>
-    </div>
-
-    <div>
-      <button type="button" id="undo-clear-button" title="" hidden>↶</button><!--
-      --><button type="button" class="clear-all-button">Limpar</button><!--
-      --><button type="button" id="add-table" class="add-table" title="Adicionr uma tabela para inserir a matriz">+</button>
-    </div>
-</div>
-<section id="resdiv" aria-live="polite" aria-label="Resultados"></section>
-
-<p>Com esta calculadora você pode: calcular o determinante, o posto, uma soma de matrizes, um produto de matrizes, uma matriz inversa e outros.</p>
-<section id="advices" aria-label="Conselhos">
-  <ul>
-    <li>Deixa <i>células vazias</i> para entrar de uma matriz não quadrada.</li>
-    <li>Você pode usar: decimais exatos, decimais periódicos: <code dir="ltr">1/3</code>, <code dir="ltr">3,14</code>, <code dir="ltr">-1,3(56)</code> ou <code dir="ltr">1,2e-4</code>; algumas expressões aritméticas: <code dir="ltr">2/3+3*(10-4)</code>, <code dir="ltr">(1+x)/y^2</code>, <code dir="ltr">2^0,5 (=<math><msqrt><mn>2</mn></msqrt></math>)</code>, <code dir="ltr">2^(1/3)</code>, <code dir="ltr">2^n</code>, <code dir="ltr">sin(phi)</code> ou <code dir="ltr">cos(3,142rad)</code>.</li>
-    <li>Use <kbd>↵ Enter</kbd>, <kbd>Barra de espaço</kbd>, <span class="arrows"><kbd>←</kbd><span><kbd>↑</kbd><kbd>↓</kbd></span><kbd>→</kbd></span>, <kbd>⌫</kbd> e <kbd>Excluir</kbd> para percorrer as células, <kbd class="ctrl"><span>Ctrl</span><span>⌘ Cmd</span></kbd>+<kbd>C</kbd>/<kbd class="ctrl"><span>Ctrl</span><span>⌘ Cmd</span></kbd>+<kbd>V</kbd> - para copiar matrizes.</li>
-    <li>Arraste umas matrizes de resultados (<a href="https://pt.wikipedia.org/wiki/Drag-and-drop">Drag-and-drop</a>) ou de um editor de texto.</li>
-    <li>Para a teoria de matrizes e operações com elas, consulte a página da <a href="https://pt.wikipedia.org/wiki/Matriz_(matemática)">Wikipedia</a>.</li>
-  </ul>
-</section>
+					<li>
+						<a class="submenu-link">Matemática superior</a>
+						<ul class="submenu">
+							
+	<li><a href="https://jpp-ap.onrender.com/matrizes/calcs/">Calculadora Matrix</a></li>
+	<li><a href="https://jpp-ap.onrender.com/matrizes/det/">O determinante da matriz</a></li>
+	<li><a href="https://jpp-ap.onrender.com/matrizes/slur/">Sistema de equações lineares</a></li>
+	<li><a href="https://jpp-ap.onrender.com/calculadoras/interpolacaon.html">Interpolação de Newton</a></li>
+						</ul>	
+					</li>
+					
+					<li>
+						<a class="submenu-link">De outros</a>
+						<ul class="submenu">
+							
+	<li><a href="/art/calcs/pt/age">Anos calculadora</a></li>		
+						</ul>	
+					</li>					
+				</ul>	<!-- //topmenu -->
 
 
-<section id="examples">
-  <details>
-    <summary>Exemplos</summary>
-    <ul>
-      <li><a translate="no" dir="ltr" href="#%7B%7B11,3%7D,%7B7,11%7D%7D%2A%7B%7B8,0,1%7D,%7B0,3,5%7D%7D"><code>{{11,3},{7,11}}*{{8,0,1},{0,3,5}}</code></a></li>
-      <li><a translate="no" dir="ltr" href="#determinant%28%7B%7B1,2,3%7D,%7B4,5,6%7D,%7B7,2,9%7D%7D%29"><code>determinant({{1,2,3},{4,5,6},{7,2,9}})</code></a></li>
-      <li><a translate="no" dir="ltr" href="#%7B%7B1,2%7D,%7B3,4%7D%7D%5E%28-1%29"><code>{{1,2},{3,4}}^-1</code></a></li>
-      <li><a translate="no" dir="ltr" href="#%7B%7B1,2,3%7D,%7B4,5,6%7D,%7B7,2,9%7D%7D%5E%28-1%29"><code>{{1,2,3},{4,5,6},{7,2,9}}^-1</code></a></li>
-      <!-- 5x+3y=7,3x-5y=-23 -->
-    </ul>
- </details>
-</section>
+				<!-- ***************************************************************** -->
+				<!--  Menu for mobile devices  -->
+				<!-- ***************************************************************** -->
+				<a href="" class="menu-mobile-title modal-menu-mobile">
+					<img class="img-float-left" src="https://jpp-ap.onrender.com/matrizes/menu/img/short-menu-big.png" width="45" height="45" alt="mobile menu" title="" />
+				</a>
+				<div class="menu-mobile">			
+				<ul id="accordion" class="accordion">
+					<li><div class="top-close-2"><a href="#" class="close-2">Fechar</a></div></li>	
+					<li><a href="https://jpp-ap.onrender.com/calculadoras/">Home</a></li>				  
+					<li>
+						<a class="link">Geometria</a>
+						<ul class="submenu-acord">
+							
+	<li><a href="https://jpp-ap.onrender.com/calculadoras/area-parallelogram.html">A área do paralelogramo</a></li>
+	<li><a href="https://jpp-ap.onrender.com/calculadoras/area-rectangle.html">Área do retângulo</a></li>
+	<li><a href="/art/math/geometry/pt/area-rhombus">Área de um losango</a></li>
+	<li><a href="/art/math/geometry/pt/area-square">Área de um quadrado</a></li>
+	<li><a href="/art/math/geometry/pt/area-trapezium">Área do trapézio</a></li>
+	<li><a href="/art/math/geometry/pt/area-triangle">A área do triângulo</a></li>
+	<li><a href="/art/math/geometry/pt/area-circle">Área do círculo</a></li>
+	<li><a href="/art/math/geometry/pt/area-tetragon">Quadrangle area</a></li>
+	<li><a href="/art/math/geometry/pt/trig-formulas">Fórmulas de trigonometria</a></li>		
+						</ul>	
+					</li>
 
-  <div class="hypercomments-details-summary-container">
-    <details>
-      <summary>Mostrar comentários</summary>
-      <div id="hypercomments_widget">
-        <progress></progress>
-        <a href="https://www.hypercomments.com/" id="hc-link" class="hc-link" lang="en" dir="auto" title="comments widget" hidden>
-          <span class="powered-text">comments powered by HyperComments</span>
-          <span class="cannot-load-text" hidden>Cannot load the widget</span>
-        </a>
-      </div>
-    </details>
-  </div>
+					
 
-    <div class="like-box">
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmatrixcalc.org%2Fpt%2F" class="facebook-share-button" data-lang="pt" target="_blank" title="Compartilhar"></a>
-      <a href="https://twitter.com/share?url=https%3A%2F%2Fmatrixcalc.org%2Fpt%2F&amp;text=Calculadora%20de%20Matrizes" class="twitter-share-button" data-lang="pt" target="_blank" title="Tweet"></a>
-      <a href="https://plus.google.com/share?url=https%3A%2F%2Fmatrixcalc.org%2Fpt%2F" class="google-plus-share-button" data-lang="pt" target="_blank" title="Compartilhar"></a>
-      <button type="button" id="share-button" data-url="https%3A%2F%2Fmatrixcalc.org%2Fpt%2F" data-text="Calculadora%20de%20Matrizes" title="Compartilhar" hidden></button>
-      <button type="button" id="a2hs-button" title="Adicionar aplicativo à tela inicial" hidden></button>
-    </div>
-</main>
-<div class="from-cookie" data-example="data-example" hidden></div>
+					<li>
+						<a class="link">Matemática superior</a>
+						<ul class="submenu-acord">
+							
+	<li><a href="https://jpp-ap.onrender.com/matrizes/calcs/">Calculadora Matrix</a></li>
+	<li><a href="https://jpp-ap.onrender.com/matrizes/det/">O determinante da matriz</a></li>
+	<li><a href="https://jpp-ap.onrender.com/matrizes/slur/">Sistema de equações lineares</a></li>
+	<li><a href="https://jpp-ap.onrender.com/calculadoras/interpolacaon.html">Interpolação de Newton</a></li>
+						</ul>	
+					</li>	
+									
+					<li>
+						<a class="link">De outros</a>
+						<ul class="submenu-acord">
+							
+	<li><a href="/art/calcs/pt/age">Anos calculadora</a></li>		
+								
+						</ul>					
+					</li>
 
-<div id="big-ads"></div>
+				</ul>
+				</div> <!--// Menu for mobile devices -->			
+			</nav>	
+							
+			<!-- mask -->	
+			<div class="mask-2"></div>		
+			<div class="end"></div>										
+		</header>	
 
-<div hidden>
-  <span id="i18n-buttons-clear">Limpar</span>
-  <span id="i18n-buttons-cells">Células</span>
-  <span id="i18n-or">ou</span>
-  <span id="i18n-appButtons-share">Compartilhar</span>
-  <span id="i18n-buttons-insertIn">Inserir na</span>
-  <span id="i18n-use-decimal-keyboard-on-mobile-phones">Use decimal keyboard on mobile phones</span>
-  <span id="i18n-buttons-upload-image">Upload an image with a matrix (Note: it may not work well)</span>
-</div>
+		<div class="content">
+			<div class="content-box">
+				<div class="page-menu">				
+					<p>Calculadora de matriz</p>
+				</div>
+								<div class="language-box ">
+					
+					<ul class="topmenu">			  
+						<li>
+						
+							<div class="submenu">
+								
+												
+									
+							</div>
+						</li>					
+					</ul>	
+				</div><!-- /.language-box -->
+		
+				<div class="end"></div>
+				<div class="fon"></div>	
+				<div class="caption-h1">
+					<h1>Calculadora de matriz</h1>
+				</div>	<!-- /caption-h1 -->
+		<div class="art">
+					<p>Calculadora de matriz para soluções graduais para operações matriciais, gratuitas online. Explicações detalhadas são fornecidas para todos os cálculos. A calculadora de matriz permite que você adicione matrizes, subtraia, multiplique, encontre o rank e determinante, transponha, traga para uma forma diagonal ou triangular, encontre autovalores e um vetor, aumente a potência e realize muitas outras operações com matrizes.</p>
+					<br>				
+					<div id="bigtable">
+						<main id="right">						
+							
+							<div class="decimal-fraction-digits-controls">
+								<label><input type="checkbox" id="decfraccheckbox">Decimal de saída</label>
+								<span hidden="" id="frdigitsspan">, <label>número de casas decimais: <input type="number" min="0" step="1" id="frdigits" value="2"></label></span>
+							</div>
+							<br>
+							
+							<input class="checkbox" id="checkbox-1" type="checkbox" checked />
+							<label for="checkbox-1" id="for-matrix-b">Matriz B</label>
+							
+							<hr class="line-of-separation-2">
+							<br>							
+							<form class="main">
+								<div>
+									<div class="tdmatrix">
+										<fieldset>
+											<legend align="center">Matriz A</legend>
+											<div class="insert-table" data-id="A" data-sizes="3x3" data-type="simple" dropzone="copy string:text/plain" title="Матрица A"></div>
+										</fieldset>
+										
+										<hr class="line-of-separation-3">
+										
+										<div class="bbox">
+											<button type="button" class="expression-button" data-expression="determinant A" title="O determinante da matriz">O determinante da matriz</button>
+											<button type="button" class="expression-button" data-expression="A^-1">A matriz inversa</button>
+											<button type="button" class="expression-button" data-expression="transpose A">Transpor</button>
+											<button type="button" class="expression-button" data-expression="rank A">O grau da matriz</button>
 
-<footer id="footer">
-  <address>
-    <a rel="nofollow author" href="mailto:matri-tri-ca@yandex.ru">matri-tri-ca@yandex.ru</a>
-  </address>
-  <aside>
-    <form action="https://www.paypal.com/donate" method="post" target="_blank" style="text-align: center;">
-      <input type="hidden" name="hosted_button_id" value="CJV6Y5A9XQFWQ" />
-      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-      <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-    </form>
-  </aside>
-  <section id="thanks" lang="en" dir="ltr">
-    <h3>Thanks to:</h3>
-    <ul>
-      <li>Philip Petrov (<a href="https://cphpvb.net" hreflang="bg">https://cphpvb.net</a>) for Bulgarian translation</li>
-      <li>Manuel Rial Costa for Galego translation</li>
-      <li>Shio Kun for Chinese translation</li>
-      <li><a href="https://im-pmf-en.weebly.com/petar-sokoloski.html" hreflang="en">Petar Sokoloski</a> for Macedonian translation</li>
-      <li>Duy Thúc Trần for Vietnamese translation</li>
-      <li><a href="https://www.twitter.com/RKursatV" hreflang="en">Rıfkı Kürşat Vuruşan</a> for Turkish translation</li>
-      <li>Ousama Malouf and Yaseen Ibrahim for Arabic translation</li>
-      <li><a href="https://marcel-artz.de" hreflang="de">Marcel Artz</a> - improving of the German translation</li>
-      <li><a href="https://matricesydeterminantes.com" lang="es" hreflang="es" title="teoría relacionada con matrices y determinantes">Marc Gisbert Juàrez</a> - fixing the translation into Catalan</li>
-    </ul>
-  </section>
+											<button type="button" class="expression-button" data-expression="Gaussian-elimination A">Vista triangular</button>
+											<button type="button" class="expression-button" data-expression="diagonalize A">Vista diagonal</button>
+											<button type="button" class="expression-button" data-expression="eigenvectors(A)">Eigenvalores e vetor</button>	
+											<button type="button" class="expression-button" data-expression="LU-decomposition A">Decomposição LU</button>
+											
+											<div class="end"></div>
+											
+											<span class="button-before-input">
+												<button type="button" class="expression-button" data-expression="k * A">Multiplicar por </button>
+												<span class="a-input">
+													<input id="k-A-m" name="k-A-m" type="text" inputmode="numeric" class="fraction-input" value="2">
+												</span>
+											</span>	
+											
+											<div class="end"></div>
+											
+											<span class="button-before-input">
+												<button type="button" class="expression-button" data-expression="A ^ k">Levante o poder de </button>
+												<span class="a-input">
+													<input id="k-A-e" name="k-A-e" type="text" inputmode="numeric" class="fraction-input" value="2">
+												</span>
+											</span>
+	
+										</div>
+											
+									</div>
+									
+									<br class="width-800">
+									<hr class="line-of-separation-2 width-800">	
 
-</footer>
+									<div class="bbox2 matrix-b">
+										<div><button type="button" class="change-button" data-for1="A" data-for2="B" title="Mude as matrizes A e B em locais">&#8660;</button></div>
+										<div><button type="button" class="expression-button" data-expression="A * B" title="Multiplique as matrizes">A &#215; B</button></div>
+										<div ><button type="button" class="expression-button" data-expression="A + B" title="Adicionar matrizes">A + B</button></div>
+										<div><button type="button" class="expression-button" data-expression="A - B" title="Restar matrizes">A &minus; B</button></div>
+									</div>
+									
+									<hr class="line-of-separation-2 width-800">
+									<br class="width-800">
+
+									<div class="tdmatrix matrix-b">
+
+										<fieldset>
+											<legend align="center">Matriz B</legend>
+											<div class="insert-table" data-id="B" data-sizes="3x3" data-type="simple" dropzone="copy string:text/plain" title="Матрица B"></div>
+										</fieldset>
+										
+										<hr class="line-of-separation-3">
+																				
+										<div class="bbox">
+											<button type="button" class="expression-button" data-expression="determinant B" title="O determinante da matriz">O determinante da matriz</button>
+											<button type="button" class="expression-button" data-expression="B^-1">A matriz inversa</button>
+											<button type="button" class="expression-button" data-expression="transpose B">Transpor</button>
+											<button type="button" class="expression-button" data-expression="rank B">O grau da matriz</button>
+											
+											<button type="button" class="expression-button" data-expression="Gaussian-elimination B">Vista triangular</button>
+											<button type="button" class="expression-button" data-expression="diagonalize B">Vista diagonal</button>
+											<button type="button" class="expression-button" data-expression="eigenvectors(B)">Eigenvalores e vetor</button>
+											<button type="button" class="expression-button" data-expression="LU-decomposition B">Decomposição LU</button>
+											
+											<div class="end"></div>
+											
+											<span class="button-before-input"><button type="button" class="expression-button" data-expression="k * B">Multiplicar por </button><span class="a-input"><input id="k-B-m" name="k-B-m" type="text" inputmode="numeric" class="fraction-input" value="2"></span></span>
+											
+											<div class="end"></div>
+											
+											<span class="button-before-input"><button type="button" class="expression-button" data-expression="B ^ k">Levante o poder de </button><span class="a-input"><input id="k-B-e" name="k-B-e" type="text" inputmode="numeric" class="fraction-input" value="2"></span></span>
+											
+										</div>
+									</div>
+								</div>
+							</form>
+
+							<div class="expression-input-container notranslate" translate="no">
+								<span class="button-after-input">
+									<datalist id="expressions-list" hidden="">
+										<option></option>
+										<option>determinant(A)</option>
+										<option>A^-1</option>
+										<option>transpose(A)</option>
+										<option>rank(A)</option>
+										<option>determinant(B)</option>
+										<option>B^-1</option>
+										<option>transpose(B)</option>
+										<option>rank(B)</option>
+										<option>A*B</option>
+										<option>A+B</option>
+										<option>A-B</option>
+										<option>{{1,2,3},{4,5,6},{7,2,9}}^(-1)</option>
+										<option>adjugate(A)</option>
+									</datalist>
+
+									<br>
+									<hr class="line-of-separation-1">
+									<p class="small" style="white-space: normal">Um campo para inserir manualmente uma expressão matemática para operações com matrizes
+</p>
+									<span class="a-input">
+										<input title="Поле ввода выражения" id="expression" name="expression" type="text" autocomplete="on" spellcheck="false" x-inputmode="verbatim" inputmode="verbatim" autocapitalize="off" class="expression-input" value="1*A+2*B" list="expressions-list">
+									</span>
+									<button type="button" class="expression-input-button"><span class="operator">calcular</span></button>
+									<br>
+									<hr class="line-of-separation-1">
+									<br>									
+									
+								</span>
+							</div>
+
+							<div class="line">
+								<div>
+
+									<div class="text-align-right">
+										<button type="button" class="clear-all-button" style="color: red;">Limpar todas as soluções</button>
+									</div>
+								</div>
+							</div>
+							<p>Solução:</p>
+							<br>
+							<section id="resdiv" aria-live="polite"></section>
+							
+						</main>
+
+					</div><!--/#bigtable -->
+					<br>
+					<div class="from-cookie" data-example="data-example"></div>
+					<br>
+					<hr class="line-of-separation-2">
+					<br>		
+					<!-- строка с наименованием вкладок -->														
+					<div class="feature-box">
+						<ul class="feature-title">
+							<li><a id="feature-1">Descrição</a></li>
+							<li><a id="feature-2">Como usar</a></li>		
+						<!--	<li><a id="feature-3">Немного теории</a></li>		-->													
+						</ul>													
+						<!-- содержание вкладок -->		
+							<!-- Описание -->										
+						<div class="feature-content" id="feature-content-1">
+							<p>Usando a nossa calculadora de matriz, você será capaz de fazer os cálculos com matrizes, obtendo o resultado desejado de uma resposta detalhada a seqüência de decisões. Matriz calculadora permite a operação com uma única matriz ou resolver expressões complexas com várias matrizes.</p>
+					  	</div>
+
+							<!-- Как пользоваться -->	
+						<div class="feature-content" id="feature-content-2">
+							<p>Preencha os campos para os elementos da matriz e clique no botão correspondente.</p>
+							<ul class="list-box">
+								<li>Use as teclas "<strong>+</strong>" e "<strong>-</strong>" para selecionar o tamanho da matriz desejada. Se você precisar de uma matriz não quadrada, basta deixar as células desnecessárias vazias.</li>
+								<li>Especifique o valor dos elementos da matriz nas células. Os valores podem ser:
+									<ul class="list-box-2">
+										<li>Inteiros: <code>7</code>, <code>-3</code>, <code>0</code></li>
+										<li>frações decimais (finitas e periódicas): <code>7/8</code>, 	<code>6.13</code>, <code>-1.3(56)</code>, <code>1.2e-4</code> </li>
+										<li>Expressões aritméticas: <code>1/2+3*(6-4)</code>, <code>(6-y)/x^3</code>, <code>2^0.5</code></li>
+									</ul>
+								</li>
+								<li>Clique no botão com o nome da operação matemática necessária ou no modo manual, digite a expressão matemática em um campo especial.</li>
+								<li>Os valores nos resultados da solução podem ser arrastados com o mouse para diferentes campos. Por exemplo, a matriz resultante pode ser arrastada para o campo de dados de origem, para maior resolução.</li>
+							</ul>
+							<a href="https://jpp-ap.onrender.com/matrizes/matrix/img/matrix-1-pt.jpg" class="example-image-link" data-lightbox="example-set" data-title="calculadora de matriz online"> 
+								<img class="img-align-center activ" src="https://jpp-ap.onrender.com/matrizes/matrix/img/matrix-0-pt.jpg" width="450" height="388" alt="calculadora de matriz online">							
+							</a>
+							<br>
+						</div>
+
+							<!-- Немного теории 
+						<div class="feature-content" id="feature-content-3">
+							<p>Вкладка 3</p>
+	               		</div>-->	
+						
+					</div>	<!-- /.feature-box контейнер вкладок-->																			
+																				
+				</div>	<!-- /art -->
+				
+			</div>	<!-- /content-box -->
+		</div>	<!-- /content -->
+		
+		<!-- *** check for phrases - Share link and comments  ***-->  	
 
 
-</div>
-</div>
+	<br>
+	<!-- Block with links to social networks - Yandex option -->
+	
 
+
+	<!-- Authorship of an article -->     
+	
+
+	<p id="back-top"><a href="#top"><span></span></a></p>	<!-- page scroll button -->
+
+	<!-- modules JS-->
+	<script src="https://jpp-ap.onrender.com/matrizes/modules/jquery-3.2.1.min.js"></script><!-- jquery -->
+	<script src="https://jpp-ap.onrender.com/matrizes/modules/jquery.lazyloadxt.js"></script><!-- delayed image loading - data-src -->
+	<script async src="https://jpp-ap.onrender.com/matrizes/js/modules.js"></script><!-- common individual scripts -->
+	<script async src="https://jpp-ap.onrender.com/matrizes/modules/lightbox/dist/js/lightbox.min.js"></script><!-- connect the module to view images -->
+	<script src="https://jpp-ap.onrender.com/matrizes/modules/jquery.modal.min.js"></script><!-- modal windows -->
+	
+	<aside>
+	   
+		<form action="https://www.paypal.com/donate/?hosted_button_id=YVQ4JYWWPJVNS" method="post" target="_blank" style="text-align: center;">
+		  <input type="hidden" name="hosted_button_id"/>
+		  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+		  <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+		</form>
+	  </aside>
+	
+	<!-- ad -->
+	<footer id="footer">
+
+		<section id="thanks" lang="pt" dir="ltr">
+		  <h3>Muito obrigado</h3>
+	  
+		</section>
+	  
+	  </footer>
+		
+	</div>
+
+<!-- /container -->
 </body>
 </html>
