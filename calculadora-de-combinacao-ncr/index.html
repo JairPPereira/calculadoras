@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<!-- Mirrored from neurochispas.com.br/calculadoras/calculadora-de-combinacao-ncr/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Dec 2022 08:09:57 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Calculadora de Combinação (nCr) - Neurochispas</title><style id="perfmatters-used-css">:where(.wp-block-button__link){box-shadow:none;text-decoration:none;border-radius:9999px;padding:calc(.667em + 2px) calc(1.333em + 2px);}.wp-block-columns{display:flex;margin-bottom:1.75em;box-sizing:border-box;flex-wrap:wrap !important;align-items:normal !important;}@media (min-width:782px){.wp-block-columns{flex-wrap:nowrap !important;}}@media (max-width:781px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:100% !important;}}@media (min-width:782px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:0;flex-grow:1;}.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column[style*=flex-basis]{flex-grow:0;}}.wp-block-columns.is-not-stacked-on-mobile{flex-wrap:nowrap !important;}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column{flex-basis:0;flex-grow:1;}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column[style*=flex-basis]{flex-grow:0;}:where(.wp-block-columns.has-background){padding:1.25em 2.375em;}.wp-block-column{flex-grow:1;min-width:0;word-break:break-word;overflow-wrap:break-word;}:where(.wp-block-post-comments input[type=submit]){border:none;}.wp-block-embed.alignleft,.wp-block-embed.alignright,.wp-block[data-align=left]>[data-type="core/embed"],.wp-block[data-align=right]>[data-type="core/embed"]{max-width:360px;width:100%;}.wp-block-embed.alignleft .wp-block-embed__wrapper,.wp-block-embed.alignright .wp-block-embed__wrapper,.wp-block[data-align=left]>[data-type="core/embed"] .wp-block-embed__wrapper,.wp-block[data-align=right]>[data-type="core/embed"] .wp-block-embed__wrapper{min-width:280px;}.wp-block-cover .wp-block-embed{min-width:320px;min-height:240px;}.wp-block-embed{overflow-wrap:break-word;}.wp-block-embed figcaption{margin-top:.5em;margin-bottom:1em;}.wp-block-embed iframe{max-width:100%;}.wp-block-embed__wrapper{position:relative;}.wp-embed-responsive .wp-has-aspect-ratio .wp-block-embed__wrapper:before{content:"";display:block;padding-top:50%;}.wp-embed-responsive .wp-has-aspect-ratio iframe{position:absolute;top:0;right:0;bottom:0;left:0;height:100%;width:100%;}.wp-embed-responsive .wp-embed-aspect-21-9 .wp-block-embed__wrapper:before{padding-top:42.85%;}.wp-embed-responsive .wp-embed-aspect-18-9 .wp-block-embed__wrapper:before{padding-top:50%;}.wp-embed-responsive .wp-embed-aspect-16-9 .wp-block-embed__wrapper:before{padding-top:56.25%;}.wp-embed-responsive .wp-embed-aspect-4-3 .wp-block-embed__wrapper:before{padding-top:75%;}.wp-embed-responsive .wp-embed-aspect-1-1 .wp-block-embed__wrapper:before{padding-top:100%;}.wp-embed-responsive .wp-embed-aspect-9-16 .wp-block-embed__wrapper:before{padding-top:177.77%;}.wp-embed-responsive .wp-embed-aspect-1-2 .wp-block-embed__wrapper:before{padding-top:200%;}:where(.wp-block-file__button){border-radius:2em;padding:.5em 1em;}:where(.wp-block-file__button):is(a):active,:where(.wp-block-file__button):is(a):focus,:where(.wp-block-file__button):is(a):hover,:where(.wp-block-file__button):is(a):visited{box-shadow:none;color:#fff;opacity:.85;text-decoration:none;}.wp-block-group{box-sizing:border-box;}.wp-block-image img{height:auto;max-width:100%;vertical-align:bottom;}.wp-block-image.has-custom-border img,.wp-block-image img{box-sizing:border-box;}.wp-block-image.aligncenter{text-align:center;}.wp-block-image.aligncenter,.wp-block-image .aligncenter,.wp-block-image.alignleft,.wp-block-image .alignleft,.wp-block-image.alignright,.wp-block-image .alignright{display:table;}.wp-block-image .aligncenter{margin-left:auto;margin-right:auto;}.wp-block-image :where(.has-border-color){border-style:solid;}.wp-block-image :where([style*=border-top-color]){border-top-style:solid;}.wp-block-image :where([style*=border-right-color]){border-right-style:solid;}.wp-block-image :where([style*=border-bottom-color]){border-bottom-style:solid;}.wp-block-image :where([style*=border-left-color]){border-left-style:solid;}.wp-block-image :where([style*=border-width]){border-style:solid;}.wp-block-image :where([style*=border-top-width]){border-top-style:solid;}.wp-block-image :where([style*=border-right-width]){border-right-style:solid;}.wp-block-image :where([style*=border-bottom-width]){border-bottom-style:solid;}.wp-block-image :where([style*=border-left-width]){border-left-style:solid;}.wp-block-image figure{margin:0;}ol,ul{box-sizing:border-box;}:where(.wp-block-navigation.has-background .wp-block-navigation-item a:not(.wp-element-button)),:where(.wp-block-navigation.has-background .wp-block-navigation-submenu a:not(.wp-element-button)),:where(.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item a:not(.wp-element-button)),:where(.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-submenu a:not(.wp-element-button)){padding:.5em 1em;}@keyframes overlay-menu__fade-in-animation{0%{opacity:0;transform:translateY(.5em);}to{opacity:1;transform:translateY(0);}}html.has-modal-open{overflow:hidden;}:where(p.has-text-color:not(.has-link-color)) a{color:inherit;}.wp-block-search__button{margin-left:.625em;word-break:normal;}.wp-block-search__button.has-icon{line-height:0;}.wp-block-search__button svg{min-width:1.5em;min-height:1.5em;fill:currentColor;vertical-align:text-bottom;}:where(.wp-block-search__button){border:1px solid #ccc;padding:.375em .625em;}.wp-block-search__inside-wrapper{display:flex;flex:auto;flex-wrap:nowrap;max-width:100%;}.wp-block-search__label{width:100%;}.wp-block-search__input{padding:8px;flex-grow:1;margin-left:0;margin-right:0;min-width:3em;border:1px solid #949494;text-decoration:unset !important;}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper){padding:4px;border:1px solid #949494;}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) .wp-block-search__input{border-radius:0;border:none;padding:0 0 0 .25em;}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) .wp-block-search__input:focus{outline:none;}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) :where(.wp-block-search__button){padding:.125em .5em;}.wp-block-search.aligncenter .wp-block-search__inside-wrapper{margin:auto;}.wp-block-spacer{clear:both;}.wp-element-button{cursor:pointer;}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px;}.has-text-align-center{text-align:center;}.has-text-align-right{text-align:right;}.aligncenter{clear:both;}.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal !important;}.screen-reader-text:focus{background-color:#ddd;clip:auto !important;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000;}html :where(.has-border-color){border-style:solid;}html :where([style*=border-top-color]){border-top-style:solid;}html :where([style*=border-right-color]){border-right-style:solid;}html :where([style*=border-bottom-color]){border-bottom-style:solid;}html :where([style*=border-left-color]){border-left-style:solid;}html :where([style*=border-width]){border-style:solid;}html :where([style*=border-top-width]){border-top-style:solid;}html :where([style*=border-right-width]){border-right-style:solid;}html :where([style*=border-bottom-width]){border-bottom-style:solid;}html :where([style*=border-left-width]){border-left-style:solid;}html :where(img[class*=wp-image-]){height:auto;max-width:100%;}figure{margin:0 0 1em;}.ub-hide{display:none;}.wp-block-ub-content-toggle{margin:20px 0 20px 0;max-width:100%;}.wp-block-ub-content-toggle-accordion{position:relative;border:1px solid #ffa07a;margin-bottom:10px;}.wp-block-ub-content-toggle-accordion.no-border{border:0 !important;}.wp-block-ub-content-toggle-accordion .wp-block-ub-content-toggle-accordion-title{padding:10px 10px 10px 25px;margin:0;display:block;}.wp-block-ub-content-toggle-accordion-title-wrap{display:flex;align-items:center;background:#ffa07a;cursor:pointer;}.wp-block-ub-content-toggle-accordion-title-wrap>*:first-child{flex-grow:1;}.wp-block-ub-content-toggle-accordion-title-wrap .wp-block-ub-content-toggle-accordion-toggle-wrap{position:relative;display:flex;justify-content:center;align-items:center;}.wp-block-ub-content-toggle-accordion-title-wrap .wp-block-ub-content-toggle-accordion-toggle-wrap.left{order:-1;}.wp-block-ub-content-toggle-accordion-title-wrap .wp-block-ub-content-toggle-accordion-toggle-wrap.right{order:0;}.wp-block-ub-content-toggle-accordion-title-wrap .wp-block-ub-content-toggle-accordion-toggle-wrap .wp-block-ub-content-toggle-accordion-toggle-location{position:absolute;left:0;right:0;top:150%;opacity:0;transition:.5s opacity ease-in-out;text-align:center;color:#191e23;}.wp-block-ub-content-toggle-accordion-title-wrap .wp-block-ub-content-toggle-accordion-state-indicator{display:block;margin:0 10px;transition:.5s all;transform:rotate(0deg);color:inherit;}.wp-block-ub-content-toggle-accordion-title-wrap .wp-block-ub-content-toggle-accordion-state-indicator.open{transform:rotate(90deg);}.wp-block-ub-content-toggle-accordion-content-wrap{box-sizing:border-box;padding:13px 4%;overflow:hidden;}.wp-block-ub-content-toggle-accordion-content-wrap.ub-hiding{height:0;padding-top:0;padding-bottom:0;margin-top:0;margin-bottom:0;}.wp-block-ub-content-toggle-accordion:hover .wp-block-ub-content-toggle-accordion-controls-top,.wp-block-ub-content-toggle-accordion:hover .wp-block-ub-content-toggle-accordion-controls-bottom,.wp-block-ub-content-toggle-accordion:hover .wp-block-ub-content-toggle-accordion-toggle-location{opacity:1 !important;}@media (max-width: 479.98px){.wp-block-ub-content-toggle-accordion .wp-block-ub-content-toggle-accordion-title{padding:10px;}}@media (max-width: 374.98px){.wp-block-ub-content-toggle-accordion .wp-block-ub-content-toggle-accordion-title{padding:10px 0 10px 10px;}.wp-block-ub-content-toggle-accordion-content-wrap p{margin:15px 0 10px;}}.wp-block-ub-math-plus,.wp-block-ub-math-plus::after{display:block;box-sizing:border-box;background:currentColor;border-radius:10px;}.wp-block-ub-math-plus{margin-top:-2px;position:relative;transform:scale(var(--ggs,1));width:16px;height:2px;}.wp-block-ub-math-plus::after{content:"";position:absolute;width:2px;height:16px;top:-7px;left:7px;}.ub_divider{display:flex;margin-left:auto;margin-right:auto;align-content:center;border-bottom:none;}.ub_divider.ub_divider:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce){max-width:initial;}.entry-content.entry-content .ub_divider{background-color:rgba(0,0,0,0);}.entry-content.entry-content .ub_divider::before,.entry-content.entry-content .ub_divider::after{content:none;}.ub-hide{display:none;}.ub_table-of-contents{box-sizing:border-box;transition:all .5s ease-in-out;background-color:#fafafa;border:1px solid #dfdfdf;padding:30px;margin-top:20px;margin-bottom:20px;display:grid;}.ub_table-of-contents ul,.ub_table-of-contents ol{margin-bottom:0;margin-left:1.3em;padding-inline-start:0;padding-left:0;}.ub_table-of-contents ol{list-style-type:none;counter-reset:item;margin:0;padding:0;}.ub_table-of-contents ol>li{display:table;counter-increment:item;}.ub_table-of-contents ol>li:before{content:counters(item,".") ". ";display:table-cell;padding-right:.6em;}.ub_table-of-contents li ol>li{margin:0;}.ub_table-of-contents li ol>li:before{content:counters(item,".") " ";}.ub_table-of-contents-header{text-align:center;font-size:20px;font-weight:500;display:grid;grid-template-columns:minmax(10px,1fr) auto;transition:all .5s ease-in-out;}.ub_table-of-contents-1-column{column-count:1;}.ub_table-of-contents-container{transition:all .5s ease-in-out;overflow:hidden;}.ub_table-of-contents .ub_table-of-contents-container ul>li:before{content:none;}.ub_table-of-contents-header-container,.ub_table-of-contents-extra-container{padding:15px 30px;transition:all .5s ease-in-out;}.ub_table-of-contents-header-container{display:grid;}.ub_table-of-contents,.ub_table-of-contents-collapsed{padding:0;}.ub_table-of-contents-collapsed .ub_table-of-contents-extra-container{padding:0;}@media screen and (max-width: 600px){.ub_table-of-contents-1-column,.ub_table-of-contents-2-column,.ub_table-of-contents-3-column{column-count:1;}}blockquote,body,dd,dl,dt,fieldset,figure,h1,h2,h3,h4,h5,h6,hr,html,iframe,legend,li,ol,p,pre,textarea,ul{margin:0;padding:0;border:0;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}main{display:block;}html{box-sizing:border-box;}*,::after,::before{box-sizing:inherit;}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;margin:0;}[type=search]{-webkit-appearance:textfield;outline-offset:-2px;}[type=search]::-webkit-search-decoration{-webkit-appearance:none;}::-moz-focus-inner{border-style:none;padding:0;}:-moz-focusring{outline:1px dotted ButtonText;}body,button,input,select,textarea{font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-weight:400;text-transform:none;font-size:17px;line-height:1.5;}p{margin-bottom:1.5em;}h1,h2,h3,h4,h5,h6{font-family:inherit;font-size:100%;font-style:inherit;font-weight:inherit;}hr{background-color:rgba(0,0,0,.1);border:0;height:1px;margin-bottom:40px;margin-top:40px;}h1{font-size:42px;margin-bottom:20px;line-height:1.2em;font-weight:400;text-transform:none;}h2{font-size:35px;margin-bottom:20px;line-height:1.2em;font-weight:400;text-transform:none;}h3{font-size:29px;margin-bottom:20px;line-height:1.2em;font-weight:400;text-transform:none;}h4{font-size:24px;}h5{font-size:20px;}h4,h5,h6{margin-bottom:20px;}ol,ul{margin:0 0 1.5em 3em;}ul{list-style:disc;}ol{list-style:decimal;}li>ol,li>ul{margin-bottom:0;margin-left:1.5em;}b,strong{font-weight:700;}cite,dfn,em,i{font-style:italic;}ins,mark{text-decoration:none;}figure{margin:0;}img{height:auto;max-width:100%;}button,input[type=button],input[type=reset],input[type=submit]{background:#55555e;color:#fff;border:1px solid transparent;cursor:pointer;-webkit-appearance:button;padding:10px 20px;}input[type=email],input[type=number],input[type=password],input[type=search],input[type=tel],input[type=text],input[type=url],select,textarea{border:1px solid;border-radius:0;padding:10px 15px;max-width:100%;}a,button,input{transition:color .1s ease-in-out,background-color .1s ease-in-out;}a{text-decoration:none;}.button,.wp-block-button .wp-block-button__link{padding:10px 20px;display:inline-block;}.aligncenter{clear:both;display:block;margin:0 auto;}.size-auto,.size-full,.size-large,.size-medium,.size-thumbnail{max-width:100%;height:auto;}.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute !important;width:1px;word-wrap:normal !important;}.screen-reader-text:focus{background-color:#f1f1f1;border-radius:3px;box-shadow:0 0 2px 2px rgba(0,0,0,.6);clip:auto !important;-webkit-clip-path:none;clip-path:none;color:#21759b;display:block;font-size:.875rem;font-weight:700;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000;}#primary[tabindex="-1"]:focus{outline:0;}.main-navigation{z-index:100;padding:0;clear:both;display:block;}.main-navigation a{display:block;text-decoration:none;font-weight:400;text-transform:none;font-size:15px;}.main-navigation ul{list-style:none;margin:0;padding-left:0;}.main-navigation .main-nav ul li a{padding-left:20px;padding-right:20px;line-height:60px;}.inside-navigation{position:relative;}.main-navigation .inside-navigation{display:flex;align-items:center;flex-wrap:wrap;justify-content:space-between;}.main-navigation .main-nav>ul{display:flex;flex-wrap:wrap;align-items:center;}.main-navigation li{position:relative;}.sidebar .main-navigation .main-nav{flex-basis:100%;}.sidebar .main-navigation .main-nav>ul{flex-direction:column;}.main-navigation ul ul{display:block;box-shadow:1px 1px 0 rgba(0,0,0,.1);float:left;position:absolute;left:-99999px;opacity:0;z-index:99999;width:200px;text-align:left;top:auto;transition:opacity 80ms linear;transition-delay:0s;pointer-events:none;height:0;overflow:hidden;}.main-navigation ul ul a{display:block;}.main-navigation ul ul li{width:100%;}.main-navigation .main-nav ul ul li a{line-height:normal;padding:10px 20px;font-size:14px;}.main-navigation:not(.toggled) ul li.sfHover>ul,.main-navigation:not(.toggled) ul li:hover>ul{left:auto;opacity:1;transition-delay:150ms;pointer-events:auto;height:auto;overflow:visible;}.main-navigation:not(.toggled) ul ul li.sfHover>ul,.main-navigation:not(.toggled) ul ul li:hover>ul{left:100%;top:0;}.nav-float-right .main-navigation ul ul ul{top:0;}.widget-area .main-navigation li{float:none;display:block;width:100%;padding:0;margin:0;}.sidebar .main-navigation.sub-menu-right ul li.sfHover ul,.sidebar .main-navigation.sub-menu-right ul li:hover ul{top:0;left:100%;}.site-header{position:relative;}.inside-header{padding:20px 40px;}.site-logo{display:inline-block;max-width:100%;}.site-header .header-image{vertical-align:middle;}.inside-header{display:flex;align-items:center;}.nav-float-right #site-navigation{margin-left:auto;}.entry-header .gp-icon,.posted-on .updated{display:none;}.entry-content:not(:first-child),.entry-summary:not(:first-child),.page-content:not(:first-child){margin-top:2em;}.entry-header,.site-content{word-wrap:break-word;}.entry-title{margin-bottom:0;}.entry-content>p:last-child,.entry-summary>p:last-child,.page-content>p:last-child,.read-more-container,.taxonomy-description p:last-child{margin-bottom:0;}.widget-area .widget{padding:40px;}.footer-widgets .widget :last-child,.sidebar .widget :last-child{margin-bottom:0;}.widget ol,.widget ul{margin:0;}.widget .search-field{width:100%;}.widget .search-form{display:flex;}.widget .search-form button.search-submit{font-size:15px;}.footer-widgets .widget:last-child,.sidebar .widget:last-child{margin-bottom:0;}.widget ul li{list-style-type:none;position:relative;margin-bottom:.5em;}.widget ul li ul{margin-left:1em;margin-top:.5em;}.site-content{display:flex;}.grid-container{margin-left:auto;margin-right:auto;max-width:1200px;}.page-header,.sidebar .widget,.site-main>*{margin-bottom:20px;}.one-container.both-right .site-main,.one-container.right-sidebar .site-main{margin-right:40px;}.one-container .site-content{padding:40px;}.widget-area .main-navigation{margin-bottom:20px;}.one-container .site-main>:last-child,.separate-containers .site-main>:last-child{margin-bottom:0;}.sidebar .grid-container{max-width:100%;width:100%;}.gp-icon{display:inline-flex;align-self:center;}.gp-icon svg{height:1em;width:1em;top:.125em;position:relative;fill:currentColor;}.close-search .icon-search svg:nth-child(1),.icon-menu-bars svg:nth-child(2),.icon-search svg:nth-child(2),.toggled .icon-menu-bars svg:nth-child(1){display:none;}.container.grid-container{width:auto;}.menu-toggle,.mobile-bar-items,.sidebar-nav-mobile{display:none;}.menu-toggle{padding:0 20px;line-height:60px;margin:0;font-weight:400;text-transform:none;font-size:15px;cursor:pointer;}.menu-toggle .mobile-menu{padding-left:3px;}.menu-toggle .gp-icon+.mobile-menu{padding-left:9px;}.menu-toggle .mobile-menu:empty{display:none;}button.menu-toggle{background-color:transparent;flex-grow:1;border:0;text-align:center;}button.menu-toggle:active,button.menu-toggle:focus,button.menu-toggle:hover{background-color:transparent;}.mobile-menu-control-wrapper{display:none;margin-left:auto;align-items:center;}@media (max-width:768px){a,body,button,input,select,textarea{transition:all 0s ease-in-out;}.inside-header{flex-direction:column;text-align:center;}.site-content{flex-direction:column;}.container .site-content .content-area{width:auto;}.is-left-sidebar.sidebar,.is-right-sidebar.sidebar{width:auto;order:initial;}#main{margin-left:0;margin-right:0;}body:not(.no-sidebar) #main{margin-bottom:0;}}</style>
+<link rel="canonical" href="index.html" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Calculadora de Combinação (nCr) - Neurochispas" />
+<meta property="og:description" content="Calculadora de Combinação (nCr) Insira o número de elementos (n) e o número de itens escolhidos (r).n escolhe r, (C(n,r)={nchoose ... Leia mais" />
+<meta property="og:url" content="https://neurochispas.com.br/calculadoras/calculadora-de-combinacao-ncr/" />
+<meta property="og:site_name" content="Neurochispas" />
+<meta property="article:published_time" content="2022-04-26T19:50:35+00:00" />
+<meta property="article:modified_time" content="2022-11-25T16:24:33+00:00" />
+<meta property="og:image" content="https://neurochispas.com.br/wp-content/uploads/2022/04/Calculadora-de-Combinacao-nCr.png" />
+<meta property="og:image:width" content="1130" />
+<meta property="og:image:height" content="736" />
+<meta property="og:image:type" content="image/png" />
+<meta name="author" content="Jefferson" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://neurochispas.com.br/calculadoras/calculadora-de-combinacao-ncr/#article","isPartOf":{"@id":"https://neurochispas.com.br/calculadoras/calculadora-de-combinacao-ncr/"},"author":{"name":"Jefferson","@id":"https://neurochispas.com.br/#/schema/person/2dc71c0e97ca20d5d16ef5dbde637a47"},"headline":"Calculadora de Combinação (nCr)","datePublished":"2022-04-26T19:50:35+00:00","dateModified":"2022-11-25T16:24:33+00:00","mainEntityOfPage":{"@id":"https://neurochispas.com.br/calculadoras/calculadora-de-combinacao-ncr/"},"wordCount":436,"publisher":{"@id":"https://neurochispas.com.br/#organization"},"image":{"@id":"https://neurochispas.com.br/calculadoras/calculadora-de-combinacao-ncr/#primaryimage"},"thumbnailUrl":"https://neurochispas.com.br/wp-content/uploads/2022/04/Calculadora-de-Combinacao-nCr.png","articleSection":["Calculadoras"],"inLanguage":"pt-BR"},{"@type":"WebPage","@id":"https://neurochispas.com.br/calculadoras/calculadora-de-combinacao-ncr/","url":"https://neurochispas.com.br/calculadoras/calculadora-de-combinacao-ncr/","name":"Calculadora de Combinação (nCr) - Neurochispas","isPartOf":{"@id":"https://neurochispas.com.br/#website"},"primaryImageOfPage":{"@id":"https://neurochispas.com.br/calculadoras/calculadora-de-combinacao-ncr/#primaryimage"},"image":{"@id":"https://neurochispas.com.br/calculadoras/calculadora-de-combinacao-ncr/#primaryimage"},"thumbnailUrl":"https://neurochispas.com.br/wp-content/uploads/2022/04/Calculadora-de-Combinacao-nCr.png","datePublished":"2022-04-26T19:50:35+00:00","dateModified":"2022-11-25T16:24:33+00:00","breadcrumb":{"@id":"https://neurochispas.com.br/calculadoras/calculadora-de-combinacao-ncr/#breadcrumb"},"inLanguage":"pt-BR","potentialAction":[{"@type":"ReadAction","target":["https://neurochispas.com.br/calculadoras/calculadora-de-combinacao-ncr/"]}]},{"@type":"ImageObject","inLanguage":"pt-BR","@id":"https://neurochispas.com.br/calculadoras/calculadora-de-combinacao-ncr/#primaryimage","url":"https://neurochispas.com.br/wp-content/uploads/2022/04/Calculadora-de-Combinacao-nCr.png","contentUrl":"https://neurochispas.com.br/wp-content/uploads/2022/04/Calculadora-de-Combinacao-nCr.png","width":1130,"height":736,"caption":"Calculadora de Combinação (nCr)"},{"@type":"BreadcrumbList","@id":"https://neurochispas.com.br/calculadoras/calculadora-de-combinacao-ncr/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://neurochispas.com.br/"},{"@type":"ListItem","position":2,"name":"Calculadora de Combinação (nCr)"}]},{"@type":"WebSite","@id":"https://neurochispas.com.br/#website","url":"https://neurochispas.com.br/","name":"Neurochispas","description":"Aprender matemática","publisher":{"@id":"https://neurochispas.com.br/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://neurochispas.com.br/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"pt-BR"},{"@type":"Organization","@id":"https://neurochispas.com.br/#organization","name":"Neurochispas","url":"https://neurochispas.com.br/","logo":{"@type":"ImageObject","inLanguage":"pt-BR","@id":"https://neurochispas.com.br/#/schema/logo/image/","url":"https://neurochispas.com.br/wp-content/uploads/2021/06/Logo.png","contentUrl":"https://neurochispas.com.br/wp-content/uploads/2021/06/Logo.png","width":560,"height":109,"caption":"Neurochispas"},"image":{"@id":"https://neurochispas.com.br/#/schema/logo/image/"}},{"@type":"Person","@id":"https://neurochispas.com.br/#/schema/person/2dc71c0e97ca20d5d16ef5dbde637a47","name":"Jefferson","image":{"@type":"ImageObject","inLanguage":"pt-BR","@id":"https://neurochispas.com.br/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/91a2b7ed5a031c570fd890d4e2325ea4?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/91a2b7ed5a031c570fd890d4e2325ea4?s=96&d=mm&r=g","caption":"Jefferson"},"sameAs":["https://neurochispas.com.br"],"url":"https://neurochispas.com.br/author/jefferson/"}]}</script>
+
+<script id="neuro-ready">
+			window.advanced_ads_ready=function(e,a){a=a||"complete";var d=function(e){return"interactive"===a?"loading"!==e:"complete"===e};d(document.readyState)?e():document.addEventListener("readystatechange",(function(a){d(a.target.readyState)&&e()}),{once:"interactive"===a})},window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[];		</script>
+<link rel='stylesheet' id='wp-block-library-css' data-pmdelayedstyle="https://neurochispas.com.br/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1" media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' data-pmdelayedstyle="https://neurochispas.com.br/wp-includes/css/classic-themes.min.css?ver=1" media='all' />
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--contrast: var(--contrast);--wp--preset--color--contrast-2: var(--contrast-2);--wp--preset--color--contrast-3: var(--contrast-3);--wp--preset--color--base: var(--base);--wp--preset--color--base-2: var(--base-2);--wp--preset--color--base-3: var(--base-3);--wp--preset--color--accent: var(--accent);--wp--preset--color--global-color-8: var(--global-color-8);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='bodhi-svgs-attachment-css' data-pmdelayedstyle="https://neurochispas.com.br/wp-content/plugins/svg-support/css/svgs-attachment.css?ver=6.1.1" media='all' />
+<link rel='stylesheet' id='generate-style-css' data-pmdelayedstyle="https://neurochispas.com.br/wp-content/themes/generatepress/assets/css/main.min.css?ver=3.1.3" media='all' />
+<style id='generate-style-inline-css'>
+body{background-color:#ffffff;color:#2c2f35;}a{color:#0c6ebe;}a:hover, a:focus{text-decoration:underline;}.entry-title a, .site-branding a, a.button, .wp-block-button__link, .main-navigation a{text-decoration:none;}a:hover, a:focus, a:active{color:#1f4080;}.grid-container{max-width:2000px;}.wp-block-group__inner-container{max-width:2000px;margin-left:auto;margin-right:auto;}.site-header .header-image{width:200px;}:root{--contrast:#222222;--contrast-2:#575760;--contrast-3:#b2b2be;--base:#f0f0f0;--base-2:#f7f8f9;--base-3:#ffffff;--accent:#1e73be;--global-color-8:#003bcf;}.has-contrast-color{color:#222222;}.has-contrast-background-color{background-color:#222222;}.has-contrast-2-color{color:#575760;}.has-contrast-2-background-color{background-color:#575760;}.has-contrast-3-color{color:#b2b2be;}.has-contrast-3-background-color{background-color:#b2b2be;}.has-base-color{color:#f0f0f0;}.has-base-background-color{background-color:#f0f0f0;}.has-base-2-color{color:#f7f8f9;}.has-base-2-background-color{background-color:#f7f8f9;}.has-base-3-color{color:#ffffff;}.has-base-3-background-color{background-color:#ffffff;}.has-accent-color{color:#1e73be;}.has-accent-background-color{background-color:#1e73be;}.has-global-color-8-color{color:#003bcf;}.has-global-color-8-background-color{background-color:#003bcf;}body, button, input, select, textarea{font-size:18px;}body{line-height:1.4;}.main-navigation a, .main-navigation .menu-toggle, .main-navigation .menu-bar-items{font-weight:600;font-size:16px;}h1, h2, h3, h4, h5, h6{font-weight:bold;}h1{font-size:32px;}@media (max-width:768px){h1{font-size:28px;}}h2{font-size:27px;}@media (max-width: 1024px){h2{font-size:27px;}}@media (max-width:768px){h2{font-size:26px;}}h3{font-size:23px;}@media (max-width:768px){h3{font-size:22px;}}h4{font-size:20px;}.top-bar{background-color:#636363;color:#ffffff;}.top-bar a{color:#ffffff;}.top-bar a:hover{color:#303030;}.site-header{background-color:var(--base-3);}.main-title a,.main-title a:hover{color:var(--contrast);}.site-description{color:var(--contrast-2);}.mobile-menu-control-wrapper .menu-toggle,.mobile-menu-control-wrapper .menu-toggle:hover,.mobile-menu-control-wrapper .menu-toggle:focus,.has-inline-mobile-toggle #site-navigation.toggled{background-color:rgba(0, 0, 0, 0.02);}.main-navigation,.main-navigation ul ul{background-color:var(--base-3);}.main-navigation .main-nav ul li a, .main-navigation .menu-toggle, .main-navigation .menu-bar-items{color:#4a4f54;}.main-navigation .main-nav ul li:not([class*="current-menu-"]):hover > a, .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus > a, .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"]) > a, .main-navigation .menu-bar-item:hover > a, .main-navigation .menu-bar-item.sfHover > a{color:#1965a8;}button.menu-toggle:hover,button.menu-toggle:focus{color:#4a4f54;}.main-navigation .main-nav ul li[class*="current-menu-"] > a{color:#385489;}.navigation-search input[type="search"],.navigation-search input[type="search"]:active, .navigation-search input[type="search"]:focus, .main-navigation .main-nav ul li.search-item.active > a, .main-navigation .menu-bar-items .search-item.active > a{color:#1965a8;}.main-navigation ul ul{background-color:var(--base);}.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .one-container .container, .separate-containers .paging-navigation, .inside-page-header{background-color:var(--base-3);}.entry-title a{color:var(--contrast);}.entry-title a:hover{color:var(--contrast-2);}.entry-meta{color:var(--contrast-2);}h1{color:#0849a5;}h2{color:#0849a5;}h3{color:#0849a5;}h4{color:#0849a5;}h5{color:#0849a5;}h6{color:#0849a5;}.sidebar .widget{background-color:var(--base-3);}.footer-widgets{background-color:var(--base-3);}.site-info{background-color:var(--base-3);}input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="tel"],input[type="number"],textarea,select{color:var(--contrast);background-color:var(--base-2);border-color:var(--base);}input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="search"]:focus,input[type="tel"]:focus,input[type="number"]:focus,textarea:focus,select:focus{color:var(--contrast);background-color:var(--base-2);border-color:var(--contrast-3);}button,html input[type="button"],input[type="reset"],input[type="submit"],a.button,a.wp-block-button__link:not(.has-background){color:#ffffff;background-color:#55555e;}button:hover,html input[type="button"]:hover,input[type="reset"]:hover,input[type="submit"]:hover,a.button:hover,button:focus,html input[type="button"]:focus,input[type="reset"]:focus,input[type="submit"]:focus,a.button:focus,a.wp-block-button__link:not(.has-background):active,a.wp-block-button__link:not(.has-background):focus,a.wp-block-button__link:not(.has-background):hover{color:#ffffff;background-color:#3f4047;}a.generate-back-to-top{background-color:rgba( 0,0,0,0.4 );color:#ffffff;}a.generate-back-to-top:hover,a.generate-back-to-top:focus{background-color:rgba( 0,0,0,0.6 );color:#ffffff;}@media (max-width:768px){.main-navigation .menu-bar-item:hover > a, .main-navigation .menu-bar-item.sfHover > a{background:none;color:#4a4f54;}}.inside-header{padding:0px 40px 0px 40px;}.nav-below-header .main-navigation .inside-navigation.grid-container, .nav-above-header .main-navigation .inside-navigation.grid-container{padding:0px 20px 0px 20px;}.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .separate-containers .paging-navigation, .one-container .site-content, .inside-page-header{padding:0px;}.site-main .wp-block-group__inner-container{padding:0px;}.separate-containers .paging-navigation{padding-top:20px;padding-bottom:20px;}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-0px;width:calc(100% + 0px);max-width:calc(100% + 0px);}.one-container.right-sidebar .site-main,.one-container.both-right .site-main{margin-right:0px;}.one-container.left-sidebar .site-main,.one-container.both-left .site-main{margin-left:0px;}.one-container.both-sidebars .site-main{margin:0px;}.sidebar .widget, .page-header, .widget-area .main-navigation, .site-main > *{margin-bottom:0px;}.separate-containers .site-main{margin:0px;}.both-right .inside-left-sidebar,.both-left .inside-left-sidebar{margin-right:0px;}.both-right .inside-right-sidebar,.both-left .inside-right-sidebar{margin-left:0px;}.one-container.archive .post:not(:last-child), .one-container.blog .post:not(:last-child){padding-bottom:0px;}.separate-containers .featured-image{margin-top:0px;}.separate-containers .inside-right-sidebar, .separate-containers .inside-left-sidebar{margin-top:0px;margin-bottom:0px;}.rtl .menu-item-has-children .dropdown-menu-toggle{padding-left:20px;}.rtl .main-navigation .main-nav ul li.menu-item-has-children > a{padding-right:20px;}.widget-area .widget{padding:40px 10px 40px 10px;}@media (max-width:768px){.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .separate-containers .paging-navigation, .one-container .site-content, .inside-page-header{padding:0px;}.site-main .wp-block-group__inner-container{padding:0px;}.inside-top-bar{padding-right:30px;padding-left:30px;}.inside-header{padding-right:30px;padding-left:30px;}.widget-area .widget{padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;}.footer-widgets-container{padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;}.inside-site-info{padding-right:30px;padding-left:30px;}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-0px;width:calc(100% + 0px);max-width:calc(100% + 0px);}.one-container .site-main .paging-navigation{margin-bottom:0px;}}/* End cached CSS */.is-right-sidebar{width:30%;}.is-left-sidebar{width:30%;}.site-content .content-area{width:70%;}@media (max-width:768px){.main-navigation .menu-toggle,.sidebar-nav-mobile:not(#sticky-placeholder){display:block;}.main-navigation ul,.gen-sidebar-nav,.main-navigation:not(.slideout-navigation):not(.toggled) .main-nav > ul,.has-inline-mobile-toggle #site-navigation .inside-navigation > *:not(.navigation-search):not(.main-nav){display:none;}.nav-align-right .inside-navigation,.nav-align-center .inside-navigation{justify-content:space-between;}.has-inline-mobile-toggle .mobile-menu-control-wrapper{display:flex;flex-wrap:wrap;}.has-inline-mobile-toggle .inside-header{flex-direction:row;text-align:left;flex-wrap:wrap;}.has-inline-mobile-toggle .header-widget,.has-inline-mobile-toggle #site-navigation{flex-basis:100%;}.nav-float-left .has-inline-mobile-toggle #site-navigation{order:10;}}
+.dynamic-author-image-rounded{border-radius:100%;}.dynamic-featured-image, .dynamic-author-image{vertical-align:middle;}.one-container.blog .dynamic-content-template:not(:last-child), .one-container.archive .dynamic-content-template:not(:last-child){padding-bottom:0px;}.dynamic-entry-excerpt > p:last-child{margin-bottom:0px;}
+.post-image:not(:first-child), .page-content:not(:first-child), .entry-content:not(:first-child), .entry-summary:not(:first-child), footer.entry-meta{margin-top:0em;}.post-image-above-header .inside-article div.featured-image, .post-image-above-header .inside-article div.post-image{margin-bottom:0em;}
+</style>
+<script id='breeze-prefetch-js-extra'>
+var breeze_prefetch = {"local_url":"https:\/\/neurochispas.com.br","ignore_remote_prefetch":"1","ignore_list":["\/wp-admin\/"]};
+</script>
+<script src='../../wp-content/plugins/breeze/assets/js/js-front-end/breeze-prefetch-links.min7b2b.js?ver=2.0.12' id='breeze-prefetch-js' defer></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://neurochispas.com.br/xmlrpc.php?rsd" />
+<link rel="alternate" type="application/json+oembed" href="https://neurochispas.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fneurochispas.com.br%2Fcalculadoras%2Fcalculadora-de-combinacao-ncr%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://neurochispas.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fneurochispas.com.br%2Fcalculadoras%2Fcalculadora-de-combinacao-ncr%2F&amp;format=xml" />
+<script src="../../wp-content/uploads/perfmatters/gtagv4bf18.js?id=G-W95NWKSED6" defer></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag("js", new Date());gtag("config", "G-W95NWKSED6");</script><script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
+<script data-cfasync="false" async src="../../../s.nitropay.com/ads-1249.js"></script>
+<style></style>
+<link rel="icon" href="../../wp-content/uploads/2021/06/cropped-Favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="../../wp-content/uploads/2021/06/cropped-Favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="../../wp-content/uploads/2021/06/cropped-Favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://neurochispas.com.br/wp-content/uploads/2021/06/cropped-Favicon-270x270.png" />
+<style id="wp-custom-css">
+			.wp-container-3, .wp-container-5, .wp-container-6, .wp-container-8, .wp-container-9, .wp-container-15, .wp-container-18, .wp-container-21 {gap:2em;}
+
+table{ border: 2px solid rgba(12,113,195,0.17) !important; border-collapse: collapse; margin:0em 0 1.5em 0;}
+
+table, th, td { border: 1px solid rgba(12,113,195,0.17); border-collapse: collapse;}
+
+.entry-content tr td { border: 1px solid rgba(12,113,195,0.17); border-collapse: collapse;}
+
+@media (max-width: 479px){	
+	.entry-content tr td {padding:5px !important;}}
+
+*::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); background-color: #F5F5F5; border-radius: 10px;}
+
+*::-webkit-scrollbar {width: 11px; background-color: #F5F5F5; height:5px;}
+
+*::-webkit-scrollbar-thumb { border-radius: 10px; background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(122,153,217)), color-stop(0.72, rgb(73,125,189)), color-stop(0.86, rgb(28,58,148)));}
+
+li { margin-bottom: 10px;}
+
+p, li{letter-spacing:0.1px;}
+
+@media only screen and (max-width: 980px){.lateral1{display:none;}.lateral{display:none;} #right-sidebar {display: none;}
+	.content-area{width:92% !important; margin:auto}.site-header .header-image {width: 160px;}}
+
+@media (min-width: 981px){
+	.entry-content tr td {padding:10px 34px;}
+	.above{width:83vw;}
+	.entry-title{width:90%;}
+	.cardblock{margin-top: -80px; max-width:96%; margin-left:auto;}
+	.abovetext{width:95%;}
+	.content-area{padding-left:9%;}
+	.inside-header{max-width:90%;}
+  #primary {width: 68%;}
+	#right-sidebar {width: 32%;}}
+@media (min-width: 1400px){ .cardblock{max-width:92%;}}
+@media (min-width: 1580px){ .cardblock{max-width:85%;}
+p, li{font-size:110%;}
+	.practica label, .pracNoad label{font-size:110% !important;}}
+@media (min-width: 1100px){.entry-title{padding-left:2vw;}
+	.above{width: 78vw; margin-left: 2vw !important; max-width: 100vw !important;}
+.inside-header{max-width:86%;}}
+
+@media (min-width: 1100px){	.entry-title{width:80%;}}
+
+@media (min-width: 1300px){.entry-title{padding-left:10%;}
+	.above{margin-left: 5% !important; padding-left: 5% !important; width: 72vw;  max-width: 1500px !important;}
+	.inside-header{max-width:77%;}
+.ctabottom, .contenido{float:right;}}
+
+.contenido { border-radius: 15px 15px 15px 15px; box-shadow: 0px 0px 40px -9px rgb(10 58 178 / 29%); margin-top:30px; margin-bottom:30px; padding:30px 60px !important; max-width:1100px; width:100%;}
+
+.bluebox, .boxNoad{ background-color: rgba(13,145,226,0.03); border-radius: 12px; border-width: 2px;	border-style:solid; border-color: rgba(12,113,195,0.17); padding:20px 20px 20px 20px !important; margin-bottom:30px;}
+
+.practica, .pracNoad{max-width:600px; border-radius: 13px; overflow: hidden; padding-top: 5px !important; margin-top:20px; margin-bottom: 30px; margin-left:auto; margin-right:auto; box-shadow: 0px 0px 18px 0px rgb(8 73 165 / 13%);}
+
+.practica p, .pracNoad p{ color:gray;}
+.practica button, .pracNoad button{padding:0px;}
+.practica h4, .pracNoad h4 {font-size:19px;}
+
+.ejercicio{margin-top:30px;}
+.ejercicio p{margin-top:7px;}
+.ejercicio h3, .ejercicio h4{color:black; font-size:16px !important; margin-bottom:0px;}
+
+.wp-block-ub-content-toggle {background-color:#f7fcff; border: 1px solid rgba(12,113,195,0.17); border-radius: 12px; padding-top:5px; margin-bottom:50px !important;}
+
+.wp-block-ub-content-toggle p, .wp-block-ub-content-toggle ol, .wp-block-ub-content-toggle ul, .wp-block-ub-content-toggle img {margin-bottom:1.3em;}
+
+.wp-block-ub-content-toggle-accordion{border-width:0px;}
+
+.wp-block-ub-content-toggle-accordion-title-wrap {background-color:#f7fcff !important; border-radius:12px;}
+
+.wp-block-ub-content-toggle-accordion-title-wrap h5{color:#0849a5 !important; font-size:18px;}
+
+.bluebox h3, .bluebox h4, .boxNoad h3, .boxNoad h4 {font-size:16px !important;}
+
+.wp-block-ub-content-toggle-accordion-toggle-wrap.right{color:#8fb7d4 !important;}
+
+tbody{background-color:aliceblue;}
+
+.cardblock{background-color:#fbfcfd; padding:20px 30px!important; border-radius:15px; border-width:2px; border-color:#e8e8e8; border-style:solid; overflow: hidden;}
+
+.cardblock p{margin-bottom:0px; margin-top:10px; font-size: 18px; line-height:1.4em;}
+.cardblock h5, .cardblock h6 {font-size:16px; margin-bottom:0px;}
+.cardblock .wp-block-image{margin-top:0px !important;}
+
+@media (max-width: 599px){ .cardblock{margin:40px 0px;} .ast-single-post .entry-title, .page-title {font-size: 25px;}}
+	
+@media (min-width: 599px){.card2{display:none;} .hidebig{display:none;}}
+
+@media (max-width: 599px){.card1{display:none;} .card2{margin:40px 0px;} .hidesmall{display:none;}}
+	
+.espacio{min-height:100vh; height:700px !important;}
+
+.ub_table-of-contents{max-width:400px; margin:40px 0px 60px 0px !important; border: 2px solid #cce3f5; background-color:#f7fcff; border-radius:5px;}
+
+.ub_table-of-contents ol>li:before {display:inline-block;}
+
+.ub_table-of-contents a, .ub_table-of-contents li{font-size:17px; color:#7a7a7a !important;}
+
+.ub_table-of-contents a:hover{font-size:17px; color:#0c71c3 !important;}
+
+
+@media only screen and (max-width: 767px){ 
+	.contenido{padding:15px 25px !important; } 
+	.entry-content tr td {padding:5px;  font-size:17px;}
+	.blockFooter{padding-top:20px;}}
+
+@media (max-width: 479px){	
+	.contenido {padding:0px !important; box-shadow:none;} 
+	.entry-content tr td { font-size:16px;}
+    .bluebox, .boxNoad{padding:10px 10px 20px 10px;}}
+
+@media (min-width:981px) and (max-width:1100px) {.contenido, .ctabottom{transform: translate(-20px, 0px);}}
+
+.above{position:relative;}
+
+.cardblock a{color:#0849a5; font-size:19px; line-height:2em;}
+
+	.card2{width:90%; margin-left:auto; margin-right:auto;}
+
+.wp-block-search__inside-wrapper {border-color:#dadada !important; border-width:2px; border-radius:5px;}
+
+.wp-block-search__button  {padding:4px 6px !important; background-color:#f7f7f7 !important; border:1px solid #ccc !important; color:#32373c !important;}
+
+.lateral1{margin-bottom:60px;}
+
+.ub_table-of-contents ol {padding: 0px 0px 0px 0.5em !important;}
+.ub_table-of-contents ul{margin-left: 0px; padding:0px 0px 0px 1em !important;}
+
+.cardblock a:hover{color:#0c71c3 !important;  text-decoration: underline;}
+
+ol, ul{margin:0 0 0 1em;}
+p, li {line-height:1.6;}
+
+.blockFooter h4, .blockFooter a{color:#0849a5; font-size:17px;}
+.blockFooter p{margin-top:20px;}
+
+.et-boc{width:100%;}
+
+.wp-block-table.aligncenter{margin:auto;}
+
+.cardblock a{color:#0849a5; font-size:19px;}
+
+.card2{width:90%; margin-left:auto; margin-right:auto;}
+
+.ub_divider{margin:50px 0px 40px 0px !important;}
+
+.lineaigual{margin-bottom:15px !important; margin-top:-25px;}
+
+.imagebottom{width: 100%; height:100%; object-fit: cover; position: absolute; z-index: 1;}
+
+.ctabottom{position:relative; border-radius: 15px 15px 15px 15px; overflow: hidden; margin:60px 0px; padding:0px 0px 100px 0px !important; max-width:1100px; }
+
+.ctabottom h3{position: relative; z-index:2; font-size:33px; padding:0px 60px; text-align:center; color:white; margin: 40px 0px 70px 0px;}
+
+.persona{display: block; margin-left:auto; margin-right:auto; max-width:60px; position:relative; z-index:2; padding-top:50px;}
+
+.ctabottom a{z-index:2; padding:15px; background-color:white; color: #0849A5; font-size:20px; border-radius: 50px; position:relative; display:block; margin-left:auto; margin-right:auto; text-align:center; max-width:200px;}
+
+.ctabottom a:hover{letter-spacing:0.4px; max-width:210px;}
+
+@media (max-width: 767px) {.ctabottom h3{font-size:28px !important; padding:0px 20px;} .unitNoselect{font-size:18px !important; padding:11px !important;}}
+.unitNoselect p{margin-bottom:0.3em;}
+
+.lateral{margin-bottom:60px;}
+
+.lateral a{color:#0849a5 !important; font-size:19px;}
+.lateral h4{max-width:350px; margin:20px auto; line-height:1.2em}
+
+.explorelink a{font-size:19px; color:#0d9bdd !important;}
+.explorelink a:hover, .lateral a:hover, .cardblock a:hover{color:#0c71c3 !important;  text-decoration: underline;}
+
+.calculadora1{max-width: 650px !important; margin:0px auto;padding:5px 10px !important;}
+.input-valor{width: 100%; border-radius: 7px 7px 0px 0px !important; padding:15px 3px !important; font-size:20px !important; text-align:center; border:2px solid #c0c4e0 !important; background-color:white !important; color:#2b2f37 !important;}
+.input-valor:focus{border-color:#7b80a3; box-shadow: inset 0px 0px 3px 0px #c2d5f6; outline:0px;}
+.input-valor:hover{box-shadow: inset 0px 0px 5px 0px #c2d5f6;}
+.input-group-sign{background: #1f5092; color: white; text-align: center; border-radius: 0px 0px 7px 7px; padding: 10px 0px !important; display:block; font-size:17px;}
+.input-calculadora{max-width:300px !important; margin:0px auto 0px auto !important; }
+.input-group-result{display:block; text-align:center; border-radius: 7px 7px 0px 0px; width:100%; min-height:48px;}
+.soluciontext{text-align:center; min-height:37px;}
+.soluciontext p{text-align:left; color:black !important; margin:10px 0px;}
+.resultados-calculadora{border:2px solid #d5d5d5; ; padding:0px 5px 10px !important; border-radius:7px; box-shadow:0px 0px 10px 0px #c9d6eb;}
+.resultados-calculadora p {font-size:18px; color:#0631a4; padding:5px 0px 8px 8px !important; margin-bottom:0.3em}
+.calculadora1 h3{color:black; font-size:20px;}
+.calculadora1 h4, .calculadora1 h2{font-size:20px; text-align:center; margin:15px 0px;}
+
+.maincal h1{color:white; text-align:center; background-color:#0057b0; border-radius:15px 15px 0px 0px; padding:13px 0px 15px 0px !important; outline:2px solid #0057b0; font-size:23px; background-image: linear-gradient(#0070C9, #024991);}
+.maincal{padding-bottom:20px !important; box-shadow:0px 0px 40px -9px rgb(10 58 178 / 29%); border-radius:15px; background-color:#f7f7f7; border:2px solid #d5d5d5; max-width:700px !important; margin:auto; margin-bottom:30px; font-size:17px; margin-top:7%;}
+.contenidocal{box-shadow:none;}
+.socialcalculadora {display:flex; margin-bottom:60px;}
+.shareBtn:hover{background: #e0e1e1; color: #454545; box-shadow: 0px 0px 10px -3px #a9c5e4;}
+.maincal2{padding:20px; min-height:200px;}
+@media (max-width: 780px){.maincal2{padding:10px;}.maincal h2{font-size:19px;} .maincal h1{font-size:20px;} .input-valor, .input-group-result{font-size:17px;} .maincal .wp-block-columns.is-not-stacked-on-mobile {gap: 0.5em;} .maincal .wp-block-columns{gap:0em;} .input-calculadora, .resultados-calculadora{line-height:1.1em;} .resultados-calculadora p{padding-left:0px !important;} .calculateBtn{float:none !important; margin:auto;}.clearBtn{display:flex; margin:auto;} .smallSpaceBlock{margin-top:-15px !important; margin-bottom:25px !important;} .tableCal thead th{font-size:16px !important;}.tableCal td{font-size:17px !important;}.maincal{margin-top:45px;} }
+.angleColumn .wp-block-columns{gap:0em !important;}
+@media (min-width: 781px){.contenidocal h2{font-size:24px;} .contenidocal h3{font-size:21px;} .angleColumn{margin-top:20px !important;}}
+
+.calculateBtn{min-width: 100px; padding: 8px; background: #0057b0; color: white; border: none; border-radius: 10px; display: flex; justify-content: center; float: right; cursor:pointer; font-size:17px; font-weight:800; background-image: linear-gradient(#0070C9, #004081);}
+.calculateBtn:hover{box-shadow:0px 0px 10px 0px #6d89a9c9; background-color: #114b92;}
+.clearBtn:hover{box-shadow:0px 0px 10px 0px #6d89a95e;}
+.clearBtn{padding:8px; border:none;color:white; cursor:pointer;font-size:16px; border-radius:5px; background: rgb(203,203,203);
+background: linear-gradient(180deg, rgba(203,203,203,1) 0%, rgba(197,197,197,1) 34%, rgba(126,126,126,1) 100%);}
+.input-with-button{color:black; background:#d5d5d5;}
+.ejemplosbox{margin-top:20px; padding:7px;}
+.ejemplosbox ul{margin-top:10px;}
+.input-fraction{padding: 15px 3px !important; font-size: 20px; text-align: center; max-width: 100%; border: 2px solid #d5d5d5 !important;float:right; background-color:white !important; color:#2b2f37 !important;}
+.input-fraction:focus {outline:0px; box-shadow:inset 0px 0px 10px 0px #e2e8f0; border: 2px solid #d5d5d5;}
+
+.black-line{border-top: 2px solid black !important; margin-top: -2px;}
+sup{font-size:13px;}
+.nospaceColumn{margin-left:0.2em !important;}
+.angleColumn{max-width:300px;margin-left:auto !important; margin-right:auto !important;}
+
+.selectAngle select {background-color: #1f5092;color: white;padding: 8px 3px;border: none;font-size: 18px;box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2); cursor:pointer; border-radius:10px; margin-top:10px; text-align:center; background-image: linear-gradient(#0070C9, #004081);}
+.selectAngle:hover::before {color: rgba(255, 255, 255, 0.6);background-color: rgba(255, 255, 255, 0.2);}
+.selectAngle select option {padding: 30px 0px;}
+.angleInput{border-radius:7px !important; font-size:18px;}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appearance: none; margin: 0;}
+input[type=number] {-moz-appearance: textfield;}
+
+.unitNoselect{font-size: 20px; padding: 13px 10px; margin-left: -9px; border: 2px solid #b5bbd4; text-align: center; background: #eeeeee; border-radius:0px 7px 7px 0px; height:64px;}
+
+.tableCal td{padding:0.2em .5em !important;}
+.tableCal thead{background:#1f5092;}
+.tableCal thead th, .tableCal thead tr{color:white; font-size:17px; padding:0.3em .5em !important;}
+
+body, button, input, select, textarea {
+    font-family: "Trebuchet MS",-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;}
+
+body { --wp--style--block-gap: 1.7em;}
+
+.globalFooter{background-color: rgba(87,165,214,0.15)!important; box-shadow: 0px 0px 20px 0px rgb(87 145 193 / 35%); padding:30px 0px 60px 0px; margin: 60px 0px 0px 0px;}
+
+.globalFooter h4{font-size:19px}
+.site-header{box-shadow: 0px 0px 15px -7px #8289c0;}
+.sidebar .widget {background-color: unset;}
+
+.entry-title{padding-top:7%; padding-bottom:27px}
+
+hr{margin-bottom:10px; margin-top:10px;}
+
+.main-navigation .main-nav ul li a {padding-left: 10px; padding-right: 10px;}
+
+.no-sidebar .entry-content .alignfull {margin-left:0px; margin-right:0px;}
+.setContainer{max-width:80%; margin:auto;}
+
+@media (max-width: 600px){.setContainer{max-width:90% !important; margin:auto;}}
+
+mjx-container[jax="CHTML"][display="true"]{padding-bottom:5px; overflow-x:auto; overflow-y:hidden;}
+@media (max-width: 700px){.tableMaxWidth table{max-width:100%; table-layout: fixed ;}
+	.tableMaxWidth mjx-math{overflow-x:auto; overflow-y:hidden; width:100%; margin:auto;}}
+mjx-assistive-mml{line-break:anywhere;}
+
+span.reportline {  display: none !important;}
+
+.answerCal1{font-size:20px !important; color:black !important}
+.buttonCal a{color:#0849a5 !important; background:white !important; border: 2px solid !important; border-radius:15px; padding:6px 20px 7px 20px !important; box-shadow:0px 0px 10px 0px #48659957; font-weight:600;}
+.buttonCal a:before{content: "⇆ "; font-size:20px;}
+.buttonCal a:hover{text-decoration:none; box-shadow: 0px 0px 10px 2px #48659957}
+.resultCalculation {display: block; text-align: center; width: 100%; min-height: 65px;}
+.simpleFraction{max-width:80px !important; min-width:0px; margin:0px auto 0px auto !important;}
+.noSpaceParagraph{margin-bottom: 0px !important; margin-top: -50px; color: aliceblue;}
+.BtnsBottom a{padding: 8px 12px; background: #0057b0; color: white; border-radius: 10px; cursor: pointer; font-size: 17px;
+ font-weight: 800; background-image: linear-gradient(#0070C9, #004081);}
+
+.BtnsBottom a:hover{box-shadow:0px 0px 10px 0px #6d89a9c9; letter-spacing:0.3px; text-decoration:none;}
+
+.BtnsBottom {max-width:200px; margin: 0px auto 30px auto;}
+
+@media only screen and (max-width: 909px) and (min-width: 781px) {.BtnsBottom a{display:block; margin: 10px auto;}}
+
+.numberedList{background: #10439b; color: white; padding: 5px 7px; border-radius: 30px; margin-left: -32px;}
+
+.line-vertical {width: 4px; height: 26px;  margin-top: -35px;}
+
+.line-vertical{position: absolute; background: #185da0;}
+
+.arrow-down:before {content: ""; position: absolute; width: 0px; height: 0px; border: 6px solid transparent;}
+
+.arrow-down:before {left: -4px;}
+
+.arrow-down:before {bottom: -15px; border-top: 15px solid #185da0;}
+
+.arrow-container{max-width:8px; margin:auto;}
+
+.stepsGroup{background:#f3fbff; border: 1px solid #8c9bb1; padding:10px 10px 0px 15px; max-width: 630px; margin: 0px auto 35px auto; border-radius:6px; box-shadow:0px 0px 21px -2px rgb(0 0 0 / 10%);}
+
+.stepsGroup:hover{box-shadow:0px 0px 21px 2px rgb(0 0 0 / 10%); border-color: #326daa;}
+
+mjx-container[jax="CHTML"][display="true"] {margin:0.1em 0 !important;}
+
+.formulaBox{width: fit-content; margin: 20px auto; background: #edf9ff; padding: 20px; max-width: 100%; border: 1px solid #1e73be; border-left: 4px solid #1e73be;}
+
+#baguetteBox-overlay .full-image img{max-height:600px; max-width:800px;}
+
+#sidebarSticky__0{margin-left:auto; margin-right:auto;}
+#sidebarTop{min-height:600px !important;}
+@media (min-width: 981px){
+	#right-sidebar {display:grid;}
+	#block-6, #block-7{position: -webkit-sticky; position: sticky; top: 20px;}}
+
+#toggle1, #toggle2, #toggle3, #toggle4, #toggle5, #toggle6, #toggle7{min-height:120px !important;}
+
+.search-results .inside-article {box-shadow: 0px 0px 2px 2px #d7dae7; padding: 20px; margin: 0px 10px; border-radius: 15px;}
+
+.search-results .entry-title{padding:0px; width:100%; font-size:22px;}
+
+.search-results article {max-width: 380px; margin:20px auto;}
+
+.search-results .entry-meta{display:none;}
+
+.search-results .page-title{margin:40px 0px; text-align:center;}
+
+.search-results .nav-links{max-width:300px; font-size:25px; margin:30px auto;}
+
+.jxgbox{margin:0px auto 40px auto !important; cursor:grab; max-width:100%; height:100% !important; aspect-ratio:1; box-shadow:0px 0px 13px 5px #e1e8ee}
+.jxgbox:active{cursor:grabbing;}
+
+.grupoLateral{padding:20px; margin:0px auto 20px auto; max-width:350px;}
+
+.calcKeypad, .calcInput{display: flex; justify-content:center; flex-wrap:wrap;}
+.calcInput #inputField, .calcInput #inputField2 {padding:15px; min-width:280px; min-height:63px; margin-top:20px; font-size:25px; text-align: center; background:white; border-radius:5px; box-shadow:0px 0px 10px -4px gray; border:2px solid #a1a1ae;}
+.calcKeypad button{background:#f1f5fa; border: 1px solid #bebed2; border-radius:5px; padding: 5px; margin: 5px 5px; font-size:15px; color:black; max-width:45px; max-height:50px;}
+.calcKeypad button:hover{cursor:pointer; background:#f5f9fb;}
+.mq-root-block, .mq-math-mode .mq-root-block{overflow-x:auto !important;}
+
+.katex-display {margin: 0 !important; padding: 5px 0; overflow-x: auto; overflow-y: hidden;}
+.katex{color:black;}		</style>
+</head>
+<body class="post-template-default single single-post postid-14675 single-format-standard wp-custom-logo wp-embed-responsive post-image-above-header post-image-aligned-center right-sidebar nav-float-right one-container header-aligned-left dropdown-hover aa-prefix-neuro-" itemtype="https://schema.org/Blog" itemscope>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><a class="screen-reader-text skip-link" href="#content" title="Pular para o conteúdo">Pular para o conteúdo</a> <header class="site-header has-inline-mobile-toggle" id="masthead" aria-label="Site" itemtype="https://schema.org/WPHeader" itemscope>
+<div class="inside-header grid-container">
+<div class="site-logo">
+<a href="https://neurochispas.com.br/" title="Neurochispas" rel="home">
+<img class="header-image is-logo-image" alt="Neurochispas" src="../../wp-content/uploads/2021/06/Logo.png" title="Neurochispas" width="560" height="109" />
+</a>
+</div> <nav class="main-navigation mobile-menu-control-wrapper" id="mobile-menu-control-wrapper" aria-label="Mobile Toggle">
+<button data-nav="site-navigation" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+<span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" /></svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" /></svg></span><span class="screen-reader-text">Menu</span> </button>
+</nav>
+<nav class="main-navigation sub-menu-right" id="site-navigation" aria-label="Primary" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+<div class="inside-navigation grid-container">
+<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+<span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" /></svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" /></svg></span><span class="mobile-menu">Menu</span> </button>
+<div id="primary-menu" class="main-nav"><ul id="menu-principal" class=" menu sf-menu"><li id="menu-item-9290" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9290"><a href="https://neurochispas.com.br/algebra/">&Aacute;lgebra</a></li>
+<li id="menu-item-9289" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9289"><a href="https://neurochispas.com.br/geometria/">Geometria</a></li>
+<li id="menu-item-14479" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14479"><a href="https://neurochispas.com.br/pre-calculo/">Pr&eacute;-c&aacute;lculo</a></li>
+<li id="menu-item-15163" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15163"><a href="#searchwp-modal-652ea0d21b1427a1bfa685e40d9bc1de" data-searchwp-modal-trigger="searchwp-modal-652ea0d21b1427a1bfa685e40d9bc1de">Search</a></li>
+</ul></div> </div>
+</nav>
+</div>
+</header>
+<div class="site grid-container container hfeed" id="page">
+<div class="site-content" id="content">
+<div class="content-area" id="primary">
+<main class="site-main" id="main">
+<article id="post-14675" class="post-14675 post type-post status-publish format-standard has-post-thumbnail hentry category-calculadoras" itemtype="https://schema.org/CreativeWork" itemscope>
+<div class="inside-article">
+<div class="entry-content" itemprop="text">
+<div class="is-layout-flow wp-block-group maincal"><div class="wp-block-group__inner-container">
+<h1 id="calcutitle">Calculadora de Combinação (nCr)</h1>
+<div class="is-layout-flow wp-block-group calculadora1"><div class="wp-block-group__inner-container">
+<p>Insira o número de elementos (n) e o número de itens escolhidos (r).<br><em>n</em> escolhe <em>r</em>, \(C(n,r)={n\choose r}\).</p>
+<p></p>
+<div class="is-layout-flex wp-container-3 wp-block-columns is-not-stacked-on-mobile">
+<div class="is-layout-flow wp-block-column">
+<div class="input-calculadora">
+<input id="input1" class="input-fraction" type="number" placeholder="Valor n"><br>
+<input id="input2" class="input-fraction" type="number" placeholder="Valor r">
+</div>
+</div>
+<div class="is-layout-flow wp-block-column">
+<div class="resultados-calculadora">
+<p><strong>Resposta:</strong></p>
+<div class="input-group-result"><span id="result1">&#8211;</span></div></div>
+</div>
+</div>
+<div class="is-layout-flex wp-container-6 wp-block-columns is-not-stacked-on-mobile">
+<div class="is-layout-flow wp-block-column">
+<button onclick="combination()" class="calculateBtn">Calcular</button>
+</div>
+<div class="is-layout-flow wp-block-column">
+<button onclick="clearBtn()" class="clearBtn">Reiniciar</button>
+</div>
+</div>
+</div></div>
+</div></div>
+<div class="is-layout-constrained wp-block-group maincal maincal2"><div class="wp-block-group__inner-container">
+<h4>Solução passo a passo:</h4>
+<div class="soluciontext"><span id="pasoapaso">&#8211;</span></div>
+<p></p>
+<script defer> 
+
+ // Function to calculate factorial of a number
+   function factorial(n){
+  let answer = 1;
+  if (n == 0 || n == 1){
+    return answer;
+  }else{
+    for(var i = n; i >= 1; i--){
+      answer = answer * i;
+    }
+    return answer;
+  }  
+}
+  
+   
+// Function that activates on click, calculates combination
+
+function combination(){
+    let valorn = parseFloat(document.getElementById("input1").value);
+    let valorr = parseFloat(document.getElementById("input2").value);
+
+
+//checing if numbers are integer
+    let enteros = true;
+    
+    if (valorn % 1 != 0 || valorr % 1 != 0) {
+        enteros = false;
+    }
+    
+    if (enteros === true){
+        if (valorn >= 0 && valorr >= 0 && valorn >= valorr){
+             let nmenosr = valorn - valorr;
+             let factorialn = factorial(valorn);
+             let factorialr = factorial(valorr);
+             let factorialP = factorial(nmenosr);
+             let respuesta2 = factorialn/(factorialr*factorialP);
+             let respuesta = respuesta2.toFixed(0);
+             document.getElementById("result1").innerHTML = `<p style="text-align:center; font-size:21px;">$$=${respuesta}$$</p>`;
+          
+   //creating step by step solution
+        
+    document.getElementById("pasoapaso").innerHTML = `<p>Usando a fórmula de combinação com <strong>\\(n=${valorn}\\)</strong> e <strong>\\(r=${valorr}\\)</strong>, temos:</p><p style="text-align:center; font-size:19px;">$$C(n,r)=C(${valorn},${valorr})$$</p> <p style="text-align:center; font-size:19px;">$$=\\frac{${valorn}!}{(${valorr}!(${valorn}-${valorr})!)}$$</p><p style="text-align:center; font-size:19px;">$$=\\frac{${valorn}!}{${valorr}!\\times ${nmenosr}!}$$</p><p style="text-align:center; font-size:19px;">$$= ${respuesta}$$</p>`;
+    } else {document.getElementById("result1").innerHTML = `<p style="color:crimson; text-align:center;">Os parâmetros devem ter o seguinte formato:</p> <p style="color:crimson; text-align:center;"> \\(n\\geq r\\geq 0\\)</p>`;
+    }
+    renderMathInElement(document.body, katexops);
+    }  else {document.getElementById("result1").innerHTML = "<p style='color:#bd1f3c;'>Digite apenas números inteiros</p>"}
+    
+}
+ //Clear everything on click
+  
+  function clearBtn(){
+      document.getElementById("input1").value = "";
+      document.getElementById("input2").value = "";
+      document.getElementById("result1").innerHTML= "";
+      document.getElementById("pasoapaso").innerHTML = "-"; 
+      }
+
+</script>
+<p></p>
+</div></div>
+<link rel="stylesheet" href="../../katex.min.css">
+<script defer="" src="../../katex.min.js"></script>
+<script defer="" src="../../auto-render.min.js"></script>
+<script defer="">
+    let katexops = {
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$latex', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        }
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, katexops);
+    });
+</script>
+<div class="is-layout-flow wp-block-group socialcalculadora"><div class="wp-block-group__inner-container">
+<button type="button" class="shareBtn" onclick="socialShare()"><img decoding="async" src="../../../www.mechamath.com/wp-content/uploads/2022/05/Share-icon-1.png" loading="lazy" width="22" height="22"><div class="textBtn">Compartilhar</div></button>
+<style>
+.shareBtn{background: #ededed; border-radius: 10px; padding: 6px 20px 0px 10px; color: #6c6c6c; border: 2px solid #a8a8a8;}
+.textBtn{display: inline-block; position: relative; transform: translate(10px, -7px);}
+</style>
+<script>
+    function socialShare()
+   {
+      if( navigator.canShare ) {
+         navigator.share({
+            title: document.title,
+            url: window.location.href
+         })
+         .then(() => console.log('Shared successfully.'))
+         .catch((error) => console.log('Sharing failed', error));
+      } else {
+         console.log(`The system doesn't support sharing.`);
+      }
+   }
+    </script>
+</div></div>
+<div class="neuro-conteudo_29" style="margin-left: auto; margin-right: auto; text-align: center; " id="neuro-476180276"><div id="underSecond"></div>
+<script>
+window['nitroAds'].createAd('underSecond', {
+  "refreshLimit": 10,
+  "refreshTime": 30,
+  "renderVisibleOnly": false,
+  "refreshVisibleOnly": true,
+  "delayLoading": true,
+  "sizes": [
+    [
+      "728",
+      "90"
+    ],
+    [
+      "320",
+      "50"
+    ],
+    [
+      "320",
+      "100"
+    ],
+    [
+      "970",
+      "90"
+    ],
+    [
+      "970",
+      "250"
+    ],
+    [
+      "300",
+      "250"
+    ],
+    [
+      "336",
+      "280"
+    ]
+  ]
+});
+</script></div><div class="is-layout-flow wp-block-group contenido contenidocal"><div class="wp-block-group__inner-container">
+<p>Use esta calculadora para encontrar o resultado de uma combinação. Digite o número total de itens e o número de itens escolhidos.</p>
+<h2>Como usar a calculadora de combinação?</h2>
+<p><strong><mark style="background-color:rgba(0, 0, 0, 0);color:#0036bf" class="has-inline-color">Passo 1:</mark></strong> Digite o número total de itens no conjunto na primeira caixa. Este é o valor de <em>n</em>. </p>
+<p><strong><mark style="background-color:rgba(0, 0, 0, 0);color:#0036bf" class="has-inline-color">Passo 2:</mark></strong> Digite o número de elementos escolhidos do conjunto na segunda caixa. Este é o valor de <em>r</em>.</p>
+<p><strong><mark style="background-color:rgba(0, 0, 0, 0);color:#0036bf" class="has-inline-color">Passo 3:</mark></strong> Clique em &#8220;Calcular&#8221; para obter o resultado da combinação.</p>
+<p><strong><mark style="background-color:rgba(0, 0, 0, 0);color:#0036bf" class="has-inline-color">Passo 4:</mark></strong> A resposta será exibida à direita e a solução passo a passo será exibida na parte inferior.</p>
+<h2>Que tipos de números posso inserir na calculadora?</h2>
+<p>Os valores de <em>n</em> e <em>r</em> devem ser positivos e inteiros. Como estamos falando de conjuntos de elementos, não podemos ter números negativos ou fracionários para calcular combinações.</p>
+<p>Além disso, o valor de <em>r</em> deve ser menor ou igual ao valor de <em>n</em>. O valor de <em>n</em> é o número total de elementos e o valor de r é o número de elementos escolhidos, então <em>r</em> não pode ser maior que <em>n</em>.</p>
+<p>Assim, tendo em conta estas duas condições, os números introduzidos devem seguir o seguinte:</p>
+<p class="has-text-align-center">\(n\geq r\geq 0\)</p>
+<h2>O que são combinações?</h2>
+<p>Uma combinação é uma técnica matemática que determina o número de arranjos possíveis de elementos onde a ordem não importa. Na combinatória, podemos selecionar os elementos em qualquer ordem.</p>
+<p>Você pode aprender mais sobre combinações visitando <a href="https://neurochispas.com.br/algebra/exercicios-de-combinacao/" target="_blank" rel="noreferrer noopener">nosso artigo</a>.</p>
+<h2>Como encontrar combinações?</h2>
+<p>As combinações podem ser encontradas usando a fórmula de combinações. Esta fórmula determina o número de maneiras possíveis de selecionar apenas alguns objetos de um conjunto sem repetição:</p>
+<p class="has-text-align-center">\( C(n,~r)={n \choose r}=\frac{n!}{r!(n-r)!}\)</p>
+<p>onde <em>n</em> é o número total de elementos no conjunto e <em>r</em> é o número de objetos selecionados.</p>
+<p>Por exemplo, se temos um conjunto de 8 elementos e escolhemos 6, podemos calcular o número de combinações da seguinte forma:</p>
+<p class="has-text-align-center">\( C( n,~r)=\frac{n!}{r!(n-r)!}\)</p>
+<p class="has-text-align-center">\( C( 8,~6)=\frac{8!}{6!(8-6)!}\)</p>
+<p class="has-text-align-center">\( =\frac{8!}{6!(2)!}\)</p>
+<p>Agora, podemos reescrever 8! como 8×7×6!, então simplifique:</p>
+<p class="has-text-align-center">\( C( 8,~6)=\frac{8\times 7 \times 6!}{6!(2)!}\)</p>
+<p class="has-text-align-center">\( =\frac{8\times 7 }{2!}\)</p>
+<p class="has-text-align-center">\( =28\)</p>
+<h2>Calculadoras relacionadas:</h2>
+<ul>
+<li><a href="../calculadora-de-permutacao-npr/index.html">Calculadora de Permutação (nPr) </a></li>
+<li><a href="../calculadora-de-equacao-do-1o-grau/index.html">Calculadora de Equação do 1º Grau </a></li>
+<li><a href="../calculadora-para-fatorar-polinomios/index.html">Calculadora para Fatorar Polinômios </a></li>
+</ul>
+<p>Você pode explorar outras calculadoras <a href="../index.html">aqui</a>.</p>
+</div></div><div class="neuro-conteudo_30" style="margin-left: auto; margin-right: auto; text-align: center; " id="neuro-290385908"><div id="afterContenidoCal"></div>
+<script>
+window['nitroAds'].createAd('afterContenidoCal', {
+  "refreshLimit": 10,
+  "refreshTime": 30,
+  "renderVisibleOnly": false,
+  "refreshVisibleOnly": true,
+  "delayLoading": true,
+	"sizes": [
+    [
+      "728",
+      "90"
+    ],
+    [
+      "320",
+      "50"
+    ],
+    [
+      "320",
+      "100"
+    ],
+    [
+      "970",
+      "90"
+    ],
+    [
+      "970",
+      "250"
+    ],
+    [
+      "300",
+      "250"
+    ],
+    [
+      "336",
+      "280"
+    ]
+  ]
+});
+</script></div>
+</div>
+</div>
+</article>
+</main>
+</div>
+<div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+<div class="inside-right-sidebar">
+<aside id="block-4" class="widget inner-padding widget_block">
+<div class="is-layout-flow wp-block-group lateral"><div class="wp-block-group__inner-container">
+<div id="sidebarTop"></div>
+<p><script>window['nitroAds'].createAd('sidebarTop', {"refreshLimit": 10, "refreshTime": 30, "renderVisibleOnly": false, "refreshVisibleOnly": true, "sizes": [["300", "250"], ["336", "280"], ["300", "600"], ["160", "600"]]});</script></p>
+<div style="height:200px" aria-hidden="true" class="wp-block-spacer"></div>
+<div class="is-layout-constrained wp-block-group grupoLateral"><div class="wp-block-group__inner-container"><div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" loading="lazy" src="../../wp-content/uploads/2021/06/Logo-pensando-pequeno-Copy.png" alt="" class="wp-image-1287" width="86" height="79" srcset="https://neurochispas.com.br/wp-content/uploads/2021/06/Logo-pensando-pequeno-Copy.png 430w, https://neurochispas.com.br/wp-content/uploads/2021/06/Logo-pensando-pequeno-Copy-300x279.png 300w" sizes="(max-width: 86px) 100vw, 86px" /></figure></div>
+<h4 class="has-text-align-center" id="explore-our-additional-mathematics-resources">Preciso de ajuda com ...</h4>
+<div class="is-layout-flex wp-container-14 wp-block-columns is-not-stacked-on-mobile">
+<div class="is-layout-flow wp-block-column">
+<p class="has-text-align-right"><a href="https://neurochispas.com.br/algebra/" data-type="page" data-id="1229" target="_blank" rel="noreferrer noopener">Álgebra</a></p>
+<p class="has-text-align-right"><a href="https://neurochispas.com.br/pre-calculo/" data-type="page" data-id="14476" target="_blank" rel="noreferrer noopener">Pré-cálculo</a></p>
+</div>
+<div class="is-layout-flow wp-block-column">
+<p><a href="https://neurochispas.com.br/geometria/" data-type="page" data-id="9285" target="_blank" rel="noreferrer noopener">Geometria</a></p>
+<p><a href="https://neurochispas.com.br/trigonometria/" data-type="page" data-id="14471" target="_blank" rel="noreferrer noopener">Trigonometria</a></p>
+</div>
+</div>
+<p class="has-text-align-center"><a href="../index.html" data-type="page" data-id="20972" target="_blank" rel="noreferrer noopener">calculadoras</a></p>
+<form role="search" method="get" action="https://neurochispas.com.br/" class="wp-block-search__button-inside wp-block-search__icon-button aligncenter wp-block-search"><label for="wp-block-search__input-15" class="wp-block-search__label screen-reader-text">Search</label><div class="wp-block-search__inside-wrapper " style="width: 100%"><input type="search" id="wp-block-search__input-15" class="wp-block-search__input wp-block-search__input " name="s" value="" placeholder="" required /><button type="submit" class="wp-block-search__button has-icon wp-element-button" aria-label="Search"><svg class="search-icon" viewBox="0 0 24 24" width="24" height="24">
+<path d="M13.5 6C10.5 6 8 8.5 8 11.5c0 1.1.3 2.1.9 3l-3.4 3 1 1.1 3.4-2.9c1 .9 2.2 1.4 3.6 1.4 3 0 5.5-2.5 5.5-5.5C19 8.5 16.5 6 13.5 6zm0 9.5c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z"></path>
+</svg></button></div></form></div></div>
+</div></div>
+</aside><aside id="block-7" class="widget inner-padding widget_block"><div id="sidebarSticky"></div>
+<script>window['nitroAds'].createAd('sidebarSticky', {"refreshLimit": 10, "refreshTime": 30, "renderVisibleOnly": true, "refreshVisibleOnly": true, "sizes": [["336", "280"], ["300", "250"], ["300", "600"], ["160", "600"]]});</script></aside> </div>
+</div>
+</div>
+</div>
+<div class="site-footer">
+<div class="is-layout-flex wp-container-26 wp-block-columns globalFooter">
+<div class="is-layout-flow wp-block-column">
+<div class="is-layout-flex wp-container-20 wp-block-columns">
+<div class="is-layout-flow wp-block-column">
+<div class="BtnsBottom"><a style="max-width:83px; text-align:center;" href="https://www.neurochispas.com/" target="_blank" rel="noopener">Español</a>
+<a style="max-width:83px; text-align:center;" href="https://www.mechamath.com/" target="_blank" rel="noopener">English</a></div>
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" src="../../wp-content/uploads/2021/06/Logo.png" alt="Logo" class="wp-image-1212" width="200" srcset="https://neurochispas.com.br/wp-content/uploads/2021/06/Logo.png 560w, https://neurochispas.com.br/wp-content/uploads/2021/06/Logo-300x58.png 300w, https://neurochispas.com.br/wp-content/uploads/2021/06/Logo-480x93.png 480w" sizes="(max-width: 560px) 100vw, 560px" /></figure></div>
+<p class="has-text-align-center">© Neurochispas 2022</p>
+</div>
+<div class="is-layout-flow wp-block-column">
+<h4 class="has-text-align-center">INFORMAÇÃO</h4>
+<p class="has-text-align-center"><a href="https://neurochispas.com.br/termos-e-condicoes/" target="_blank" rel="noreferrer noopener">Termos e Condições</a></p>
+<p class="has-text-align-center"><a href="https://neurochispas.com.br/privacy-policy/" target="_blank" rel="noreferrer noopener">Política de Privacidade</a></p>
+</div>
+</div>
+</div>
+<div class="is-layout-flow wp-block-column">
+<div class="is-layout-flex wp-container-24 wp-block-columns">
+<div class="is-layout-flow wp-block-column">
+<h4 class="has-text-align-center">RECURSOS</h4>
+<p class="has-text-align-center"><a href="https://neurochispas.com.br/algebra/" target="_blank" rel="noreferrer noopener">Álgebra</a></p>
+<p class="has-text-align-center"><a href="https://neurochispas.com.br/geometria/" target="_blank" rel="noreferrer noopener">Geometria</a></p>
+</div>
+<div class="is-layout-flow wp-block-column">
+<h4 class="has-text-align-center">SUPORTE</h4>
+<p class="has-text-align-center"><a href="https://neurochispas.com.br/sobre-nos/" target="_blank" rel="noreferrer noopener">Sobre nós</a></p>
+<p class="has-text-align-center"><a href="https://neurochispas.com.br/contato/" target="_blank" rel="noreferrer noopener">Contato</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+window['nitroAds'].createAd('anchor', {
+  "refreshLimit": 10,
+  "refreshTime": 30,
+  "format": "anchor",
+  "anchor": "bottom",
+  "anchorPersistClose": false,
+  "mediaQuery": "(min-width: 0px)",
+});
+</script> <div class="searchwp-modal-form" id="searchwp-modal-652ea0d21b1427a1bfa685e40d9bc1de" aria-hidden="true">
+<div class="searchwp-modal-form-default">
+<div class="searchwp-modal-form__overlay" tabindex="-1" data-searchwp-modal-form-close>
+<div class="searchwp-modal-form__container" role="dialog" aria-modal="true">
+<main class="searchwp-modal-form__content">
+<form method="get" class="search-form" action="https://neurochispas.com.br/">
+<label>
+<span class="screen-reader-text">Pesquisar por:</span>
+<input type="search" class="search-field" placeholder="Pesquisar &hellip;" value="" name="s" title="Pesquisar por:">
+</label>
+<button class="search-submit" aria-label="Pesquisar"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path fill-rule="evenodd" clip-rule="evenodd" d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" /></svg></span></button><input type="hidden" name="swpmfe" value="652ea0d21b1427a1bfa685e40d9bc1de" /></form>
+</main>
+<footer class="searchwp-modal-form__footer">
+<button class="searchwp-modal-form__close button" aria-label="Close" data-searchwp-modal-form-close></button>
+</footer>
+</div>
+</div>
+</div>
+<style>
+    .searchwp-modal-form {
+        display: none;
+    }
+
+    .searchwp-modal-form.is-open {
+        display: block;
+    }
+
+    
+	/* ************************************
+	 *
+	 * 1) Overlay and container positioning
+	 *
+	 ************************************ */
+	.searchwp-modal-form-default .searchwp-modal-form__overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 9999990;
+	}
+
+	.searchwp-modal-form-default .searchwp-modal-form__container {
+		width: 100%;
+		max-width: 500px;
+		max-height: 100vh;
+	}
+
+	.searchwp-modal-form-default .searchwp-modal-form__content {
+		overflow-y: auto;
+		box-sizing: border-box;
+		position: relative;
+		z-index: 9999998;
+	}
+
+    .searchwp-modal-form-default .searchwp-modal-form__close {
+        display: block;
+    }
+
+    .searchwp-modal-form-default .searchwp-modal-form__close:before {
+        content: "\00d7";
+    }
+
+    
+
+    
+	/* **************************************
+	 *
+	 * 2) WordPress search form customization
+	 *
+	 ************************************** */
+
+    .searchwp-modal-form-default .searchwp-modal-form__overlay {
+        background: rgba(45, 45, 45 ,0.6);
+    }
+
+    .searchwp-modal-form-default .searchwp-modal-form__content {
+        background-color: #fff;
+        padding: 2em;
+        border-radius: 2px;
+    }
+
+	.searchwp-modal-form-default .searchwp-modal-form__content .search-form {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.searchwp-modal-form-default .searchwp-modal-form__content .search-form label {
+		flex: 1;
+		padding-right: 0.75em; /* This may cause issues depending on your theme styles. */
+
+		/* Some common resets */
+		float: none;
+		margin: 0;
+		width: auto;
+	}
+
+	.searchwp-modal-form-default .searchwp-modal-form__content .search-form label input {
+		display: block;
+		width: 100%;
+		margin-left: 0.75em;
+
+		/* Some common resets */
+		float: none;
+		margin: 0;
+	}
+
+	.searchwp-modal-form-default .searchwp-modal-form__footer {
+		padding-top: 1em;
+	}
+
+	.searchwp-modal-form-default .searchwp-modal-form__close {
+        line-height: 1em;
+		background: transparent;
+		padding: 0.4em 0.5em;
+        border: 0;
+        margin: 0 auto;
+	}
+
+	.searchwp-modal-form-default .searchwp-modal-form__close:before {
+		font-size: 2em;
+	}
+
+	/* ******************************************
+	 *
+	 * 3) Animation and display interaction setup
+	 *
+	 ***************************************** */
+	@keyframes searchwpModalFadeIn {
+		from { opacity: 0; }
+		to { opacity: 1; }
+	}
+
+	@keyframes searchwpModalFadeOut {
+		from { opacity: 1; }
+		to { opacity: 0; }
+	}
+
+	@keyframes searchwpModalSlideIn {
+		from { transform: translateY(15%); }
+		to { transform: translateY(0); }
+	}
+
+	@keyframes searchwpModalSlideOut {
+		from { transform: translateY(0); }
+		to { transform: translateY(-10%); }
+	}
+
+	.searchwp-modal-form[aria-hidden="false"] .searchwp-modal-form-default .searchwp-modal-form__overlay {
+		animation: searchwpModalFadeIn .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+	}
+
+	.searchwp-modal-form[aria-hidden="false"] .searchwp-modal-form-default .searchwp-modal-form__container {
+		animation: searchwpModalSlideIn .3s cubic-bezier(0, 0, .2, 1);
+	}
+
+	.searchwp-modal-form[aria-hidden="true"] .searchwp-modal-form-default .searchwp-modal-form__overlay {
+		animation: searchwpModalFadeOut .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+	}
+
+	.searchwp-modal-form[aria-hidden="true"] .searchwp-modal-form-default .searchwp-modal-form__container {
+		animation: searchwpModalSlideOut .3s cubic-bezier(0, 0, .2, 1);
+	}
+
+	.searchwp-modal-form-default .searchwp-modal-form__container,
+	.searchwp-modal-form-default .searchwp-modal-form__overlay {
+		will-change: transform;
+	}
+    </style>
+</div>
+<script id="generate-a11y">!function(){"use strict";if("querySelector"in document&&"addEventListener"in window){var e=document.body;e.addEventListener("mousedown",function(){e.classList.add("using-mouse")}),e.addEventListener("keydown",function(){e.classList.remove("using-mouse")})}}();</script><style id='core-block-supports-inline-css'>
+.wp-block-columns.wp-container-3,.wp-block-columns.wp-container-6,.wp-block-columns.wp-container-14,.wp-block-columns.wp-container-20,.wp-block-columns.wp-container-24,.wp-block-columns.wp-container-26{flex-wrap:nowrap;}
+</style>
+<!--[if lte IE 11]>
+<script src='https://neurochispas.com.br/wp-content/themes/generatepress/assets/js/classList.min.js?ver=3.1.3' id='generate-classlist-js'></script>
+<![endif]-->
+<script id='generate-menu-js-extra'>
+var generatepressMenu = {"toggleOpenedSubMenus":"1","openSubMenuLabel":"Open Sub-Menu","closeSubMenuLabel":"Close Sub-Menu"};
+</script>
+<script src='../../wp-content/themes/generatepress/assets/js/menu.min583f.js?ver=3.1.3' id='generate-menu-js' defer></script>
+<script id='searchwp-modal-form-js-extra'>
+var searchwp_modal_form_params = {"disableScroll":null};
+</script>
+<script id="searchwp-modal-form-js" data-pmdelayedscript="https://neurochispas.com.br/wp-content/plugins/searchwp-modal-search-form/assets/dist/searchwp-modal-form.min.js?ver=0.5.0" data-cfasync="false" data-no-optimize="1" data-no-defer="1" data-no-minify="1"></script>
+<script>!function(){window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[],advanced_ads_ready_queue.push=window.advanced_ads_ready;for(var d=0,a=advanced_ads_ready_queue.length;d<a;d++)advanced_ads_ready(advanced_ads_ready_queue[d])}();</script>
+<script type="text/javascript" id="perfmatters-delayed-styles-js">!function(){const e=["keydown","mousemove","wheel","touchmove","touchstart","touchend"];function t(){document.querySelectorAll("link[data-pmdelayedstyle]").forEach(function(e){e.setAttribute("href",e.getAttribute("data-pmdelayedstyle"))}),e.forEach(function(e){window.removeEventListener(e,t,{passive:!0})})}e.forEach(function(e){window.addEventListener(e,t,{passive:!0})})}();</script><script type="text/javascript" id="perfmatters-delayed-scripts-js">const perfmattersUserInteractions=["keydown","mousemove","wheel","touchmove","touchstart","touchend"];perfmattersUserInteractions.forEach(function(event){window.addEventListener(event,pmTriggerDelayedScripts,{passive:!0})});function pmTriggerDelayedScripts(){pmLoadDelayedScripts();perfmattersUserInteractions.forEach(function(event){window.removeEventListener(event, pmTriggerDelayedScripts,{passive:!0});});}function pmLoadDelayedScripts(){document.querySelectorAll("script[data-pmdelayedscript]").forEach(function(elem){elem.setAttribute("src",elem.getAttribute("data-pmdelayedscript"));});}</script></body>
+
+<!-- Mirrored from neurochispas.com.br/calculadoras/calculadora-de-combinacao-ncr/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Dec 2022 08:09:57 GMT -->
+</html>
+
