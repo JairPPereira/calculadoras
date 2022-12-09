@@ -1,5 +1,9 @@
-<html lang="pt"><head>
-	<base href="https://www.matematica.pt/">
+
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+	<base href='https://www.matematica.pt/'>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="A regra de três simples pode ser utilizada para descobrir um valor em falta numa proporção. Nesta calculadora mostramos passo a passo como é que isso se faz.">
@@ -7,12 +11,12 @@
 	<meta name="author" content="Vitor Nunes">
 	
 	<!-- FaceBook META Tags -->
-	<meta property="og:site_name" content="matematica.pt">
-	<meta property="og:url" content="https://www.matematica.pt/util/calculadora-regra-3-simples.php">
-	<meta property="og:type" content="article">
-	<meta property="og:title" content="Regra de Três Simples">
-	<meta property="og:description" content="A regra de três simples pode ser utilizada para descobrir um valor em falta numa proporção. Nesta calculadora mostramos passo a passo como é que isso se faz.">
-	<meta property="og:image" content="https://www.matematica.pt/images/256_calculadora.png">		
+	<meta property='og:site_name' content='matematica.pt'>
+	<meta property='og:url' content='https://www.matematica.pt/util/calculadora-regra-3-simples.php'>
+	<meta property='og:type' content='article'>
+	<meta property='og:title' content='Regra de Três Simples'>
+	<meta property='og:description' content='A regra de três simples pode ser utilizada para descobrir um valor em falta numa proporção. Nesta calculadora mostramos passo a passo como é que isso se faz.'>
+	<meta property='og:image' content='https://www.matematica.pt/images/256_calculadora.png'>		
 
 	<title>Regra de Três Simples</title>
 	
@@ -28,11 +32,11 @@
 	<!-- Línguas alternativas -->
 	
 	<!-- JS Global -->
-	<script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202212010101/reactive_library_fy2021.js?bust=31071167"></script><script src="https://partner.googleadservices.com/gampad/cookie.js?domain=www.matematica.pt&amp;callback=_gfp_s_&amp;client=ca-pub-6710216031332363&amp;cookie=ID%3D74e37fba87a7c888-227e0cca627f0025%3AT%3D1670260575%3ART%3D1670260575%3AS%3DALNI_MaeY8Xyrm2OGyT9oCYYdexNr18zxg&amp;gpic=UID%3D0000057799c59587%3AT%3D1670260575%3ART%3D1670579772%3AS%3DALNI_MaxJY-lAJm_T7liKuOuBUNUEppoTA&amp;gpid_exp=1"></script><script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202212010101/show_ads_impl_fy2021.js?bust=31071167" id="google_shimpl"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<!-- Google Analytics 4 -->
-	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-EN3HH9WHYN"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-EN3HH9WHYN"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
@@ -56,682 +60,18 @@
 		var ma=function(){var a=function(){if(!l.frames.googlefcPresent)if(document.body){var b=document.createElement("iframe");b.style.display="none";b.style.width="0px";b.style.height="0px";b.style.border="none";b.style.zIndex="-1000";b.style.left="-1000px";b.style.top="-1000px";b.name="googlefcPresent";document.body.appendChild(b)}else l.setTimeout(a,5)};a()},na=function(a){var b=Date.now();W(a.b,"internal_api_load_with_sb",a.f.h(),function(){var c;var d=a.b,e=l[l.btoa(d+"loader_js")];if(e){e=l.atob(e);
 		e=parseInt(e,10);d=l.btoa(d+"loader_js").split(".");var f=l;d[0]in f||"undefined"==typeof f.execScript||f.execScript("var "+d[0]);for(;d.length&&(c=d.shift());)d.length?f[c]&&f[c]!==Object.prototype[c]?f=f[c]:f=f[c]={}:f[c]=null;c=Math.abs(b-e);c=1728E5>c?0:c}else c=-1;0!=c&&(W(a.b,"internal_api_sb"),Z(a,Q(a.a,6)))},function(c){Z(a,c?Q(a.a,4):Q(a.a,5))})},Z=function(a,b){a.c||(a.c=!0,a=new l.XMLHttpRequest,a.open("GET",b,!0),a.send())};(function(a,b){l[a]=function(c){for(var d=[],e=0;e<arguments.length;++e)d[e-0]=arguments[e];l[a]=q;b.apply(null,d)}})("__d3lUW8vwsKlB__",function(a){"function"==typeof window.atob&&(a=window.atob(a),a=new X(a?JSON.parse(a):null),(new Y(a)).start())});}).call(this);
 		window.__d3lUW8vwsKlB__("WyJmZGYwNmYwYWQyMTUxNjBiIixbbnVsbCxudWxsLG51bGwsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2YvQUdTS1d4WFhmcUVqX2x5MXJJU0VqVEF4aU45Um9taXVuWmtnYzJzVldkYU5GTnRFdUxjNFZkUThjaDZXdGk5R0wwVXRTV2pubWVtZTR4S0Z6ZEoyRWdhbzd4VVx1MDAzZCJdLFsyMCwiZGl2LWdwdC1hZCIsMTAwLCJabVJtTURabU1HRmtNakUxTVRZd1lnXHUwMDNkXHUwMDNkIixbbnVsbCxudWxsLG51bGwsImh0dHBzOi8vd3d3LmdzdGF0aWMuY29tLzBlbW4vZi9wL2ZkZjA2ZjBhZDIxNTE2MGIuanM/dXNxcFx1MDAzZENBMCJdXSwiaHR0cHM6Ly9mdW5kaW5nY2hvaWNlc21lc3NhZ2VzLmdvb2dsZS5jb20vZWwvQUdTS1d4V2gzcFoySzg4RnpRRkNmNzlnOFJ4QkFCekpKSm10LUl1aHVGa1JCcGtLZzFoTWlhZDZFc1ZMZGhkMi1UbXNJVVFQaXQ2LWVPX1hyRDB3bEZseT9hYlx1MDAzZDEiLCJodHRwczovL2Z1bmRpbmdjaG9pY2VzbWVzc2FnZXMuZ29vZ2xlLmNvbS9lbC9BR1NLV3hVc3BmSnhOM21ndjExcDdvdzZZQmxjZnl0UTdPMC1lZkZIbFc5TUZVdkVULW45bldWbU1pSW85Nm9IclRpTkdUcS11M0lRLVJLV1Z3NWRaM0ZnP2FiXHUwMDNkMlx1MDAyNnNiZlx1MDAzZDEiLCJodHRwczovL2Z1bmRpbmdjaG9pY2VzbWVzc2FnZXMuZ29vZ2xlLmNvbS9lbC9BR1NLV3hYR3RXb3NOSk5yTm9PSTFnd1d1dlZ2cmJpclQ5MTZFanFveXFIcjY3OS1Xd2VHUkd3UDZoQmtiRGF6U0J5bGNKTmpNcGJ0YjZ6OWZ2cklkLTFHP3NiZlx1MDAzZDIiXQ==");
-	</script><script async="" src="https://fundingchoicesmessages.google.com/f/AGSKWxXXfqEj_ly1rISEjTAxiN9RomiunZkgc2sVWdaNFNtEuLc4VdQ8ch6Wti9GL0UtSWjnmeme4xKFzdJ2Egao7xU="></script>
+	</script>
 
 	<!-- Google AdSense -->
-	<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6710216031332363" crossorigin="anonymous" data-checked-head="true"></script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6710216031332363" crossorigin="anonymous"></script>
 	
 	<script>MathJax = {loader: {load: ['input/asciimath', 'output/chtml']}}</script>
-	<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js"></script>		
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/core.js" charset="UTF-8"></script><meta http-equiv="origin-trial" content="Az6AfRvI8mo7yiW5fLfj04W21t0ig6aMsGYpIqMTaX60H+b0DkO1uDr+7BrzMcimWzv/X7SXR8jI+uvbV0IJlwYAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+USTya+tNvDPaxUgJooz+LaVk5hPoAxpLvSxjogX4Mk8awCTQ9iop6zJ9d5ldgU7WmHqBlnQB41LHHRFxoaBwoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A7FovoGr67TUBYbnY+Z0IKoJbbmRmB8fCyirUGHavNDtD91CiGyHHSA2hDG9r9T3NjUKFi6egL3RbgTwhhcVDwUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="Az6AfRvI8mo7yiW5fLfj04W21t0ig6aMsGYpIqMTaX60H+b0DkO1uDr+7BrzMcimWzv/X7SXR8jI+uvbV0IJlwYAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+USTya+tNvDPaxUgJooz+LaVk5hPoAxpLvSxjogX4Mk8awCTQ9iop6zJ9d5ldgU7WmHqBlnQB41LHHRFxoaBwoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A7FovoGr67TUBYbnY+Z0IKoJbbmRmB8fCyirUGHavNDtD91CiGyHHSA2hDG9r9T3NjUKFi6egL3RbgTwhhcVDwUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="Az6AfRvI8mo7yiW5fLfj04W21t0ig6aMsGYpIqMTaX60H+b0DkO1uDr+7BrzMcimWzv/X7SXR8jI+uvbV0IJlwYAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+USTya+tNvDPaxUgJooz+LaVk5hPoAxpLvSxjogX4Mk8awCTQ9iop6zJ9d5ldgU7WmHqBlnQB41LHHRFxoaBwoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A7FovoGr67TUBYbnY+Z0IKoJbbmRmB8fCyirUGHavNDtD91CiGyHHSA2hDG9r9T3NjUKFi6egL3RbgTwhhcVDwUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="Az6AfRvI8mo7yiW5fLfj04W21t0ig6aMsGYpIqMTaX60H+b0DkO1uDr+7BrzMcimWzv/X7SXR8jI+uvbV0IJlwYAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+USTya+tNvDPaxUgJooz+LaVk5hPoAxpLvSxjogX4Mk8awCTQ9iop6zJ9d5ldgU7WmHqBlnQB41LHHRFxoaBwoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A7FovoGr67TUBYbnY+Z0IKoJbbmRmB8fCyirUGHavNDtD91CiGyHHSA2hDG9r9T3NjUKFi6egL3RbgTwhhcVDwUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/input/asciimath.js" charset="UTF-8"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml.js" charset="UTF-8"></script><link rel="preload" href="https://adservice.google.com.br/adsid/integrator.js?domain=www.matematica.pt" as="script"><script type="text/javascript" src="https://adservice.google.com.br/adsid/integrator.js?domain=www.matematica.pt"></script><link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=www.matematica.pt" as="script"><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=www.matematica.pt"></script><script async="" src="https://fundingchoicesmessages.google.com/f/AGSKWxVmzG80-q__0WUTK0pa0xMEPUXSr9HASYDiKJ0aWCq2m_PbUUOaInl94e535IT-Jae91hCcFhUZfiJ--6OzJS8=?fccs=W1siQUtzUm9sOGNSZGRnWHlNbVBEM3JMUV82QzMwMjJsOVhXdDBuVmlDU1Zkc1lKVERyandNVEZDTzhsSDNETDdqakNYMFkzNVhKR1Q0cmVrcDB2Z1ZFNkVsanctVnU0QjlTekdCckh3cnFkNjgyMk5sX2FVaVA1Wjd4QmJMRVZXZUhPOS1ZUmE5NGVjSWRJd0Mzdk5BMjE4VlZOYTRlVlVrbFJnPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2NzA1Nzk3ODEsNzMwMDAwMDAwXSwiOEYzMjRFNEUtQUJGNi00RTMxLUJCRjctNTE5NDIyQ0JGODlGIixudWxsLG51bGwsW251bGwsWzddXSwiaHR0cHM6Ly93d3cubWF0ZW1hdGljYS5wdC91dGlsL2NhbGN1bGFkb3JhLXJlZ3JhLTMtc2ltcGxlcy5waHAiLG51bGwsW1s4LCJEOTBaMThpSWFvNCJdLFs5LCJwdC1CUiJdXV0"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/tex.js" charset="UTF-8"></script><script async="" src="https://fundingchoicesmessages.google.com/f/AGSKWxVSrfWaPu_oSjOgs3ANBEFjO_3U8dPxMzqP9Z_EsTDSg0k0dYymUZsuT3ZW9VHKTls6OTDPtpSeH8c4kmS2ALjwd7Esd9URh3mdXn3Wv7NWel4p4cmX2MQNpheKSpI8z0XEBF70fw==?fccs=W1siQUtzUm9sOGNSZGRnWHlNbVBEM3JMUV82QzMwMjJsOVhXdDBuVmlDU1Zkc1lKVERyandNVEZDTzhsSDNETDdqakNYMFkzNVhKR1Q0cmVrcDB2Z1ZFNkVsanctVnU0QjlTekdCckh3cnFkNjgyMk5sX2FVaVA1Wjd4QmJMRVZXZUhPOS1ZUmE5NGVjSWRJd0Mzdk5BMjE4VlZOYTRlVlVrbFJnPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2NzA1Nzk3ODEsOTEzMDAwMDAwXSwiOEYzMjRFNEUtQUJGNi00RTMxLUJCRjctNTE5NDIyQ0JGODlGIixudWxsLG51bGwsW251bGwsWzcsOV0sbnVsbCwyXSwiaHR0cHM6Ly93d3cubWF0ZW1hdGljYS5wdC91dGlsL2NhbGN1bGFkb3JhLXJlZ3JhLTMtc2ltcGxlcy5waHAiLG51bGwsW1s4LCJEOTBaMThpSWFvNCJdLFs5LCJwdC1CUiJdXV0"></script><style id="MJX-CHTML-styles">
-mjx-container[jax="CHTML"] {
-  line-height: 0;
-}
+	<script id='MathJax-script' async  src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js'></script>		
+</head>
 
-mjx-container [space="1"] {
-  margin-left: .111em;
-}
+<body>
 
-mjx-container [space="2"] {
-  margin-left: .167em;
-}
-
-mjx-container [space="3"] {
-  margin-left: .222em;
-}
-
-mjx-container [space="4"] {
-  margin-left: .278em;
-}
-
-mjx-container [space="5"] {
-  margin-left: .333em;
-}
-
-mjx-container [rspace="1"] {
-  margin-right: .111em;
-}
-
-mjx-container [rspace="2"] {
-  margin-right: .167em;
-}
-
-mjx-container [rspace="3"] {
-  margin-right: .222em;
-}
-
-mjx-container [rspace="4"] {
-  margin-right: .278em;
-}
-
-mjx-container [rspace="5"] {
-  margin-right: .333em;
-}
-
-mjx-container [size="s"] {
-  font-size: 70.7%;
-}
-
-mjx-container [size="ss"] {
-  font-size: 50%;
-}
-
-mjx-container [size="Tn"] {
-  font-size: 60%;
-}
-
-mjx-container [size="sm"] {
-  font-size: 85%;
-}
-
-mjx-container [size="lg"] {
-  font-size: 120%;
-}
-
-mjx-container [size="Lg"] {
-  font-size: 144%;
-}
-
-mjx-container [size="LG"] {
-  font-size: 173%;
-}
-
-mjx-container [size="hg"] {
-  font-size: 207%;
-}
-
-mjx-container [size="HG"] {
-  font-size: 249%;
-}
-
-mjx-container [width="full"] {
-  width: 100%;
-}
-
-mjx-box {
-  display: inline-block;
-}
-
-mjx-block {
-  display: block;
-}
-
-mjx-itable {
-  display: inline-table;
-}
-
-mjx-row {
-  display: table-row;
-}
-
-mjx-row > * {
-  display: table-cell;
-}
-
-mjx-mtext {
-  display: inline-block;
-}
-
-mjx-mstyle {
-  display: inline-block;
-}
-
-mjx-merror {
-  display: inline-block;
-  color: red;
-  background-color: yellow;
-}
-
-mjx-mphantom {
-  visibility: hidden;
-}
-
-_::-webkit-full-page-media, _:future, :root mjx-container {
-  will-change: opacity;
-}
-
-mjx-math {
-  display: inline-block;
-  text-align: left;
-  line-height: 0;
-  text-indent: 0;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 100%;
-  font-size-adjust: none;
-  letter-spacing: normal;
-  border-collapse: collapse;
-  word-wrap: normal;
-  word-spacing: normal;
-  white-space: nowrap;
-  direction: ltr;
-  padding: 1px 0;
-}
-
-mjx-container[jax="CHTML"][display="true"] {
-  display: block;
-  text-align: center;
-  margin: 1em 0;
-}
-
-mjx-container[jax="CHTML"][display="true"][width="full"] {
-  display: flex;
-}
-
-mjx-container[jax="CHTML"][display="true"] mjx-math {
-  padding: 0;
-}
-
-mjx-container[jax="CHTML"][justify="left"] {
-  text-align: left;
-}
-
-mjx-container[jax="CHTML"][justify="right"] {
-  text-align: right;
-}
-
-mjx-mi {
-  display: inline-block;
-  text-align: left;
-}
-
-mjx-c {
-  display: inline-block;
-}
-
-mjx-utext {
-  display: inline-block;
-  padding: .75em 0 .2em 0;
-}
-
-mjx-mn {
-  display: inline-block;
-  text-align: left;
-}
-
-mjx-mo {
-  display: inline-block;
-  text-align: left;
-}
-
-mjx-stretchy-h {
-  display: inline-table;
-  width: 100%;
-}
-
-mjx-stretchy-h > * {
-  display: table-cell;
-  width: 0;
-}
-
-mjx-stretchy-h > * > mjx-c {
-  display: inline-block;
-  transform: scalex(1.0000001);
-}
-
-mjx-stretchy-h > * > mjx-c::before {
-  display: inline-block;
-  width: initial;
-}
-
-mjx-stretchy-h > mjx-ext {
-  /* IE */ overflow: hidden;
-  /* others */ overflow: clip visible;
-  width: 100%;
-}
-
-mjx-stretchy-h > mjx-ext > mjx-c::before {
-  transform: scalex(500);
-}
-
-mjx-stretchy-h > mjx-ext > mjx-c {
-  width: 0;
-}
-
-mjx-stretchy-h > mjx-beg > mjx-c {
-  margin-right: -.1em;
-}
-
-mjx-stretchy-h > mjx-end > mjx-c {
-  margin-left: -.1em;
-}
-
-mjx-stretchy-v {
-  display: inline-block;
-}
-
-mjx-stretchy-v > * {
-  display: block;
-}
-
-mjx-stretchy-v > mjx-beg {
-  height: 0;
-}
-
-mjx-stretchy-v > mjx-end > mjx-c {
-  display: block;
-}
-
-mjx-stretchy-v > * > mjx-c {
-  transform: scaley(1.0000001);
-  transform-origin: left center;
-  overflow: hidden;
-}
-
-mjx-stretchy-v > mjx-ext {
-  display: block;
-  height: 100%;
-  box-sizing: border-box;
-  border: 0px solid transparent;
-  /* IE */ overflow: hidden;
-  /* others */ overflow: visible clip;
-}
-
-mjx-stretchy-v > mjx-ext > mjx-c::before {
-  width: initial;
-  box-sizing: border-box;
-}
-
-mjx-stretchy-v > mjx-ext > mjx-c {
-  transform: scaleY(500) translateY(.075em);
-  overflow: visible;
-}
-
-mjx-mark {
-  display: inline-block;
-  height: 0px;
-}
-
-mjx-mfrac {
-  display: inline-block;
-  text-align: left;
-}
-
-mjx-frac {
-  display: inline-block;
-  vertical-align: 0.17em;
-  padding: 0 .22em;
-}
-
-mjx-frac[type="d"] {
-  vertical-align: .04em;
-}
-
-mjx-frac[delims] {
-  padding: 0 .1em;
-}
-
-mjx-frac[atop] {
-  padding: 0 .12em;
-}
-
-mjx-frac[atop][delims] {
-  padding: 0;
-}
-
-mjx-dtable {
-  display: inline-table;
-  width: 100%;
-}
-
-mjx-dtable > * {
-  font-size: 2000%;
-}
-
-mjx-dbox {
-  display: block;
-  font-size: 5%;
-}
-
-mjx-num {
-  display: block;
-  text-align: center;
-}
-
-mjx-den {
-  display: block;
-  text-align: center;
-}
-
-mjx-mfrac[bevelled] > mjx-num {
-  display: inline-block;
-}
-
-mjx-mfrac[bevelled] > mjx-den {
-  display: inline-block;
-}
-
-mjx-den[align="right"], mjx-num[align="right"] {
-  text-align: right;
-}
-
-mjx-den[align="left"], mjx-num[align="left"] {
-  text-align: left;
-}
-
-mjx-nstrut {
-  display: inline-block;
-  height: .054em;
-  width: 0;
-  vertical-align: -.054em;
-}
-
-mjx-nstrut[type="d"] {
-  height: .217em;
-  vertical-align: -.217em;
-}
-
-mjx-dstrut {
-  display: inline-block;
-  height: .505em;
-  width: 0;
-}
-
-mjx-dstrut[type="d"] {
-  height: .726em;
-}
-
-mjx-line {
-  display: block;
-  box-sizing: border-box;
-  min-height: 1px;
-  height: .06em;
-  border-top: .06em solid;
-  margin: .06em -.1em;
-  overflow: hidden;
-}
-
-mjx-line[type="d"] {
-  margin: .18em -.1em;
-}
-
-mjx-mrow {
-  display: inline-block;
-  text-align: left;
-}
-
-mjx-c::before {
-  display: block;
-  width: 0;
-}
-
-.MJX-TEX {
-  font-family: MJXZERO, MJXTEX;
-}
-
-.TEX-B {
-  font-family: MJXZERO, MJXTEX-B;
-}
-
-.TEX-I {
-  font-family: MJXZERO, MJXTEX-I;
-}
-
-.TEX-MI {
-  font-family: MJXZERO, MJXTEX-MI;
-}
-
-.TEX-BI {
-  font-family: MJXZERO, MJXTEX-BI;
-}
-
-.TEX-S1 {
-  font-family: MJXZERO, MJXTEX-S1;
-}
-
-.TEX-S2 {
-  font-family: MJXZERO, MJXTEX-S2;
-}
-
-.TEX-S3 {
-  font-family: MJXZERO, MJXTEX-S3;
-}
-
-.TEX-S4 {
-  font-family: MJXZERO, MJXTEX-S4;
-}
-
-.TEX-A {
-  font-family: MJXZERO, MJXTEX-A;
-}
-
-.TEX-C {
-  font-family: MJXZERO, MJXTEX-C;
-}
-
-.TEX-CB {
-  font-family: MJXZERO, MJXTEX-CB;
-}
-
-.TEX-FR {
-  font-family: MJXZERO, MJXTEX-FR;
-}
-
-.TEX-FRB {
-  font-family: MJXZERO, MJXTEX-FRB;
-}
-
-.TEX-SS {
-  font-family: MJXZERO, MJXTEX-SS;
-}
-
-.TEX-SSB {
-  font-family: MJXZERO, MJXTEX-SSB;
-}
-
-.TEX-SSI {
-  font-family: MJXZERO, MJXTEX-SSI;
-}
-
-.TEX-SC {
-  font-family: MJXZERO, MJXTEX-SC;
-}
-
-.TEX-T {
-  font-family: MJXZERO, MJXTEX-T;
-}
-
-.TEX-V {
-  font-family: MJXZERO, MJXTEX-V;
-}
-
-.TEX-VB {
-  font-family: MJXZERO, MJXTEX-VB;
-}
-
-mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
-  font-family: MJXZERO, MJXTEX-S1, MJXTEX-S4, MJXTEX, MJXTEX-A ! important;
-}
-
-@font-face /* 0 */ {
-  font-family: MJXZERO;
-  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Zero.woff") format("woff");
-}
-
-@font-face /* 1 */ {
-  font-family: MJXTEX;
-  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff") format("woff");
-}
-
-@font-face /* 2 */ {
-  font-family: MJXTEX-B;
-  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff") format("woff");
-}
-
-@font-face /* 3 */ {
-  font-family: MJXTEX-I;
-  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff") format("woff");
-}
-
-@font-face /* 4 */ {
-  font-family: MJXTEX-MI;
-  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff") format("woff");
-}
-
-@font-face /* 5 */ {
-  font-family: MJXTEX-BI;
-  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
-}
-
-@font-face /* 6 */ {
-  font-family: MJXTEX-S1;
-  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff") format("woff");
-}
-
-@font-face /* 7 */ {
-  font-family: MJXTEX-S2;
-  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff") format("woff");
-}
-
-@font-face /* 8 */ {
-  font-family: MJXTEX-S3;
-  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff") format("woff");
-}
-
-@font-face /* 9 */ {
-  font-family: MJXTEX-S4;
-  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff") format("woff");
-}
-
-@font-face /* 10 */ {
-  font-family: MJXTEX-A;
-  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_AMS-Regular.woff") format("woff");
-}
-
-@font-face /* 11 */ {
-  font-family: MJXTEX-C;
-  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
-}
-
-@font-face /* 12 */ {
-  font-family: MJXTEX-CB;
-  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
-}
-
-@font-face /* 13 */ {
-  font-family: MJXTEX-FR;
-  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
-}
-
-@font-face /* 14 */ {
-  font-family: MJXTEX-FRB;
-  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
-}
-
-@font-face /* 15 */ {
-  font-family: MJXTEX-SS;
-  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
-}
-
-@font-face /* 16 */ {
-  font-family: MJXTEX-SSB;
-  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
-}
-
-@font-face /* 17 */ {
-  font-family: MJXTEX-SSI;
-  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
-}
-
-@font-face /* 18 */ {
-  font-family: MJXTEX-SC;
-  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff") format("woff");
-}
-
-@font-face /* 19 */ {
-  font-family: MJXTEX-T;
-  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
-}
-
-@font-face /* 20 */ {
-  font-family: MJXTEX-V;
-  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff") format("woff");
-}
-
-@font-face /* 21 */ {
-  font-family: MJXTEX-VB;
-  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
-}
-
-mjx-c.mjx-c1D465.TEX-I::before {
-  padding: 0.442em 0.572em 0.011em 0;
-  content: "x";
-}
-
-mjx-c.mjx-c31::before {
-  padding: 0.666em 0.5em 0 0;
-  content: "1";
-}
-
-mjx-c.mjx-c2F::before {
-  padding: 0.75em 0.5em 0.25em 0;
-  content: "/";
-}
-
-mjx-c.mjx-c34::before {
-  padding: 0.677em 0.5em 0 0;
-  content: "4";
-}
-
-mjx-c.mjx-c30::before {
-  padding: 0.666em 0.5em 0.022em 0;
-  content: "0";
-}
-
-mjx-c.mjx-c2C::before {
-  padding: 0.121em 0.278em 0.194em 0;
-  content: ",";
-}
-
-mjx-c.mjx-c32::before {
-  padding: 0.666em 0.5em 0 0;
-  content: "2";
-}
-
-mjx-c.mjx-c35::before {
-  padding: 0.666em 0.5em 0.022em 0;
-  content: "5";
-}
-
-mjx-c.mjx-c3D::before {
-  padding: 0.583em 0.778em 0.082em 0;
-  content: "=";
-}
-
-mjx-c.mjx-cD7::before {
-  padding: 0.491em 0.778em 0 0;
-  content: "\D7";
-}
-
-mjx-c.mjx-c36::before {
-  padding: 0.666em 0.5em 0.022em 0;
-  content: "6";
-}
-
-mjx-c.mjx-c38::before {
-  padding: 0.666em 0.5em 0.022em 0;
-  content: "8";
-}
-
-mjx-c.mjx-c21D4::before {
-  padding: 0.526em 1em 0.025em 0;
-  content: "\21D4";
-}
-
-mjx-c.mjx-c33::before {
-  padding: 0.665em 0.5em 0.022em 0;
-  content: "3";
-}
-
-mjx-c.mjx-c37::before {
-  padding: 0.676em 0.5em 0.022em 0;
-  content: "7";
-}
-</style><script async="" src="https://fundingchoicesmessages.google.com/f/AGSKWxXJyhDrvub88AFvr6HUYiHex1NfjhnwC7SFqJzaQXk3BWGDNdrLMuG6H0PxUUKZOdSPKvrsAQgH6Re5qBinEZrCZ43s83sKxccYaygj11wnDjNIuUCFhZdX40uClBmnYyPG8NHQwQ==?fccs=W1siQUtzUm9sOGNSZGRnWHlNbVBEM3JMUV82QzMwMjJsOVhXdDBuVmlDU1Zkc1lKVERyandNVEZDTzhsSDNETDdqakNYMFkzNVhKR1Q0cmVrcDB2Z1ZFNkVsanctVnU0QjlTekdCckh3cnFkNjgyMk5sX2FVaVA1Wjd4QmJMRVZXZUhPOS1ZUmE5NGVjSWRJd0Mzdk5BMjE4VlZOYTRlVlVrbFJnPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2NzA1Nzk3ODQsNjk3MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw5LDZdLG51bGwsMixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLDFdLCJodHRwczovL3d3dy5tYXRlbWF0aWNhLnB0L3V0aWwvY2FsY3VsYWRvcmEtcmVncmEtMy1zaW1wbGVzLnBocCIsbnVsbCxbWzgsIkQ5MFoxOGlJYW80Il0sWzksInB0LUJSIl1dXQ"></script></head>
-
-<body style="padding: 0px;">
-
-<div class="wrapper" style="height: auto !important;">
+<div class="wrapper">
     <div class="header">
         <div class="topbar">
             <div class="container">
@@ -739,7 +79,7 @@ mjx-c.mjx-c37::before {
 					<li><i class="fa fa-user"></i>
 					<a href="admin/login.php?location=%2Futil%2Fcalculadora-regra-3-simples.php">Login</a>					</li>
                     <li class="topbar-devider"></li>				
-					<li><i class="fa fa-home"></i> <a href="index.php">Inicio</a></li><li class="topbar-devider"></li>                    <li><i class="fa fa-envelope"></i> <a href="contacto.php">Contactar</a></li>
+					<li><i class='fa fa-home'></i> <a href='index.php'>Inicio</a></li><li class='topbar-devider'></li>                    <li><i class="fa fa-envelope"></i> <a href="contacto.php">Contactar</a></li>
                 </ul>
             </div>
         </div>
@@ -1152,14 +492,14 @@ mjx-c.mjx-c37::before {
 								<input type="hidden" name="ie" value="UTF-8">
 								<div class="search-open">
 									<div class="input-group animated fadeInDown">
-										<input type="text" class="form-control" name="q" placeholder="" style="background: url(&quot;https://www.google.com/cse/static/images/1x/pt_BR/branding.png&quot;) left 9px top 50% no-repeat rgb(255, 255, 255);">
+										<input type="text" class="form-control" name="q">
 										<span class="input-group-btn">
 											<button class="btn btn-primary" type="submit">Ver</button>
 										</span>
 									</div>
 								</div>
-							<input name="siteurl" value="www.matematica.pt/util/calculadora-regra-3-simples.php" type="hidden"><input name="ref" value="www.matematica.pt/util/calculadora-regra-3-simples.php" type="hidden"><input name="ss" value="" type="hidden"></form>
-							<script src="https://cse.google.com/brand?form=cse-search-box&amp;lang=pt&amp;sitesearch=true"></script>							
+							</form>
+							<script src="https://cse.google.com/brand?form=cse-search-box&lang=pt&sitesearch=true"></script>							
                         </li>
 						
                     </ul>
@@ -1167,19 +507,23 @@ mjx-c.mjx-c37::before {
             </div>    
         </div>            
     </div>
-	<div class="container-fluid" style="height: auto !important;">
-	    <div class="row" style="height: auto !important;">
+	<div class="container-fluid">
+	    <div class="row">
 			<div class="col-lg-2 hidden-md hidden-sm hidden-xs">
 				<div id="pub_esquerdo">
 					<!-- Anuncio Lateral Esquerdo -->
-					<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-					<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-full-width-responsive="true" data-ad-client="ca-pub-6710216031332363" data-ad-slot="4210921730" data-adsbygoogle-status="done" data-ad-status="filled"><div id="aswift_1_host" style="border: none; height: 600px; width: 160px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0;width:160px;height:600px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="160" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?gdpr=0&amp;client=ca-pub-6710216031332363&amp;output=html&amp;h=600&amp;slotname=4210921730&amp;adk=33822026&amp;adf=3231486631&amp;pi=t.ma~as.4210921730&amp;w=160&amp;lmt=1670579781&amp;format=160x600&amp;url=https%3A%2F%2Fwww.matematica.pt%2Futil%2Fcalculadora-regra-3-simples.php&amp;fwrattr=true&amp;wgl=1&amp;uach=WyJXaW5kb3dzIiwiMTUuMC4wIiwieDg2IiwiIiwiMTA4LjAuNTM1OS45OSIsW10sZmFsc2UsbnVsbCwiNjQiLFtbIk5vdD9BX0JyYW5kIiwiOC4wLjAuMCJdLFsiQ2hyb21pdW0iLCIxMDguMC41MzU5Ljk5Il0sWyJHb29nbGUgQ2hyb21lIiwiMTA4LjAuNTM1OS45OSJdXSxmYWxzZV0.&amp;dt=1670579781282&amp;bpp=9&amp;bdt=284&amp;idt=336&amp;shv=r20221206&amp;mjsv=m202212010101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D74e37fba87a7c888-227e0cca627f0025%3AT%3D1670260575%3ART%3D1670260575%3AS%3DALNI_MaeY8Xyrm2OGyT9oCYYdexNr18zxg&amp;gpic=UID%3D0000057799c59587%3AT%3D1670260575%3ART%3D1670579772%3AS%3DALNI_MaxJY-lAJm_T7liKuOuBUNUEppoTA&amp;prev_fmts=0x0&amp;nras=1&amp;correlator=7012208857050&amp;frm=20&amp;pv=1&amp;ga_vid=2038315379.1670260575&amp;ga_sid=1670579782&amp;ga_hid=1409138812&amp;ga_fc=1&amp;u_tz=-180&amp;u_his=2&amp;u_h=864&amp;u_w=1536&amp;u_ah=816&amp;u_aw=1536&amp;u_cd=24&amp;u_sd=0.938&amp;dmc=4&amp;adx=4&amp;ady=86&amp;biw=2025&amp;bih=951&amp;scr_x=0&amp;scr_y=0&amp;eid=44759875%2C44759926%2C44759837%2C44773809%2C31071167%2C44774606&amp;oid=2&amp;pvsid=384640881362844&amp;tmod=1510296128&amp;uas=0&amp;nvt=1&amp;ref=https%3A%2F%2Fwww.matematica.pt%2Futil%2Fcalculadora-regra-3-simples.php&amp;eae=0&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1536%2C0%2C1536%2C816%2C2048%2C951&amp;vis=1&amp;rsz=%7C%7CfeE%7C&amp;abl=CF&amp;pfx=0&amp;fu=0&amp;bc=31&amp;ifi=2&amp;uci=a!2&amp;fsb=1&amp;xpc=ryG630nZIk&amp;p=https%3A//www.matematica.pt&amp;dtd=429" data-google-container-id="a!2" data-google-query-id="CNPT2dOi7PsCFfFEuAQdQrQPgQ" data-load-complete="true"></iframe></div></ins>
+					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+					<ins class="adsbygoogle"
+						 style="display:inline-block;width:160px;height:600px"
+						 data-full-width-responsive="true"
+						 data-ad-client="ca-pub-6710216031332363"
+						 data-ad-slot="4210921730"></ins>
 					<script>
 						 (adsbygoogle = window.adsbygoogle || []).push({});
 					</script>
 				</div>
 			</div>
-            <div class="col-lg-8 col-md-10" style="height: auto !important; min-height: 0px !important;"><br>
+            <div class="col-lg-8 col-md-10"><br>
 	
 				<script>
 					$(document).ready(function(){
@@ -1214,9 +558,9 @@ mjx-c.mjx-c37::before {
                             <img src="images/estudar.png" class="img-responsive rounded-2x" style="border: solid 3px #fff;" alt="Aprender a estudar matemática">
                         </div>
                         <div class="col-xs-12 col-sm-8 text-center">
-							<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+							<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                             <br>
-							<h2 style="color:white"><span id="escreveTexto">QUERES  APRENDER MATEMÁTICA?</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true">|</span></h2>
+							<h2 style="color:white"><span id="escreveTexto"></span></h2>
                             <p style="color:white; margin-bottom:0;">Assiste hoje mesmo às nossas aulas em vídeo com centenas de exercícios resolvidos. Aproveita e esclarece as tuas dúvidas todas!</p>
 						</div>
 					</div>
@@ -1267,17 +611,17 @@ mjx-c.mjx-c37::before {
 	
 	<div class="tag-box tag-box-v1 margin-bottom-20">
 		<img style="float:right; margin:0 10px;" src="images/128_calculadora.png" width="128" height="128" alt="calculadora de equações">
-		<p><span class="dropcap">Q</span>uando duas grandezas são <a href="proporcionalidade-direta.php">diretamente proporcionais</a>, ou seja, o aumento de uma delas, implica um aumento da outra na mesma proporção, pode-se utilizar a <b>regra de três simples</b> para descobrir um dos valores em falta. Vamos supor que numa receita de cozinha nos é dito para utilizar 500 gramas de farinha e 8 ovos. Qual é a quantidade de farinha que deverei utilizar caso apenas tenha disponível meia dúzia de ovos? Esta é uma típica questão, em que a utilização da regra de 3 simples, nos permite chegar de forma bastante rápida e fácil à resposta pretendida.</p>
+		<p><span class="dropcap">Q</span>uando duas grandezas são <a href="faq/proporcionalidade-direta.php">diretamente proporcionais</a>, ou seja, o aumento de uma delas, implica um aumento da outra na mesma proporção, pode-se utilizar a <b>regra de três simples</b> para descobrir um dos valores em falta. Vamos supor que numa receita de cozinha nos é dito para utilizar 500 gramas de farinha e 8 ovos. Qual é a quantidade de farinha que deverei utilizar caso apenas tenha disponível meia dúzia de ovos? Esta é uma típica questão, em que a utilização da regra de 3 simples, nos permite chegar de forma bastante rápida e fácil à resposta pretendida.</p>
 	</div>
 
-	<img class="img-responsive" style="margin:10px auto;" src="images/regra-de-tres.jpg" alt="regra de três simples"><br>
+	<img class="img-responsive" style="margin:10px auto;" src="images/regra-de-tres.jpg" alt="regra de três simples" /><br>
 
 	<div class="alert alert-warning fade in alert-dismissable">
-		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 		<p class="text-center"><b>NOTA</b></p>
-		<ul class="fa-ul">
-			<li><i class="fa-li fa fa-check-square"></i> Coloca um <b><mjx-container class="MathJax" jax="CHTML" style="font-size: 117.4%;"><mjx-math class="MJX-TEX"><mjx-mstyle><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D465 TEX-I"></mjx-c></mjx-mi></mjx-mstyle></mjx-math></mjx-container></b> no valor que pretendes descobrir.</li>
-			<li><i class="fa-li fa fa-check-square"></i> Se quiseres introduzir uma fração, deverás colocar o número na forma decimal, ou seja, em vez de <mjx-container class="MathJax" jax="CHTML" style="font-size: 117.4%;"><mjx-math class="MJX-TEX"><mjx-mstyle><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c2F"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c34"></mjx-c></mjx-mn></mjx-mstyle></mjx-math></mjx-container> deverás colocar <mjx-container class="MathJax" jax="CHTML" style="font-size: 117.4%;"><mjx-math class="MJX-TEX"><mjx-mstyle><mjx-mn class="mjx-n"><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="2"><mjx-c class="mjx-c32"></mjx-c><mjx-c class="mjx-c35"></mjx-c></mjx-mn></mjx-mstyle></mjx-math></mjx-container>.</li>
+		<ul class='fa-ul'>
+			<li><i class='fa-li fa fa-check-square'></i> Coloca um <b>`x`</b> no valor que pretendes descobrir.</li>
+			<li><i class='fa-li fa fa-check-square'></i> Se quiseres introduzir uma fração, deverás colocar o número na forma decimal, ou seja, em vez de `1//4` deverás colocar `0,25`.</li>
 		</ul>
 	</div><br>
 
@@ -1288,8 +632,8 @@ mjx-c.mjx-c37::before {
 		<div class="panel-body">                                                      
 			<form class="form-inline" action="util/calculadora-regra-3-simples.php" method="post">
 				<table>
-					<tbody><tr>
-						<td><img src="images/regra-de-3.png" alt="Receita de cozinha com regra de 3 simples"></td>
+					<tr>
+						<td><img src="images/regra-de-3.png" alt="Receita de cozinha com regra de 3 simples" /></td>
 						<td style="width:100%; padding:20px">
 							<table class="table table-striped">
 								<thead>
@@ -1302,7 +646,7 @@ mjx-c.mjx-c37::before {
 							</table>
 						</td>
 					</tr>
-				</tbody></table>
+				</table>
 				<span style="float:right;">
 					<input type="submit" class="btn-u btn-u-orange" value="Calcular">&nbsp;&nbsp;
 				</span>
@@ -1314,22 +658,22 @@ mjx-c.mjx-c37::before {
 			<h3 class="panel-title"><i class="fa fa-edit"></i> Resolução passo a passo da regra de 3 simples</h3>
 		</div>
 		<div class="panel-body">                                                      
-			<mjx-container class="MathJax" jax="CHTML" style="font-size: 117.4%;"><mjx-math class="MJX-TEX"><mjx-mstyle><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D465 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mfrac space="4"><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-mn class="mjx-n"><mjx-c class="mjx-c35"></mjx-c><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="3"><mjx-c class="mjx-c36"></mjx-c></mjx-mn></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mn class="mjx-n"><mjx-c class="mjx-c38"></mjx-c></mjx-mn></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c21D4"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D465 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c33"></mjx-c><mjx-c class="mjx-c37"></mjx-c><mjx-c class="mjx-c35"></mjx-c></mjx-mn></mjx-mstyle></mjx-math></mjx-container> <br><br><b>Resposta</b>: O valor em falta na proporção é 375.			
+						
 		</div>
 	</div>
 
 	<div class="alert alert-warning fade in alert-dismissable">
-		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 		<p class="text-center"><b>Como Aplicar a Regra de Três Simples</b></p>
-		<ul class="fa-ul">
-			<li><i class="fa-li fa fa-check-square"></i> Na primeira linha começa por colocar o nome das grandezas em duas colunas diferentes. (no exemplo: farinha e ovos)</li>
-			<li><i class="fa-li fa fa-check-square"></i> Na segunda linha coloca os valores conhecidos. (no exemplo: 500 gr. de farinha corresponde a 8 ovos)</li>
-			<li><i class="fa-li fa fa-check-square"></i> Na terceira linha coloca um dos valores conhecidos e no valor desconhecido coloca um <mjx-container class="MathJax" jax="CHTML" style="font-size: 117.4%;"><mjx-math class="MJX-TEX"><mjx-mstyle><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D465 TEX-I"></mjx-c></mjx-mi></mjx-mstyle></mjx-math></mjx-container>. (no exemplo: queremos saber a quantidade de farinha que corresponde a 6 ovos)</li>
-			<li><i class="fa-li fa fa-check-square"></i> Por fim, o valor desconhecido, representado por <mjx-container class="MathJax" jax="CHTML" style="font-size: 117.4%;"><mjx-math class="MJX-TEX"><mjx-mstyle><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D465 TEX-I"></mjx-c></mjx-mi></mjx-mstyle></mjx-math></mjx-container>, é igual ao produto cruzado dos números que se encontram verticalmente e horizontalmente em relação ao <mjx-container class="MathJax" jax="CHTML" style="font-size: 117.4%;"><mjx-math class="MJX-TEX"><mjx-mstyle><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D465 TEX-I"></mjx-c></mjx-mi></mjx-mstyle></mjx-math></mjx-container>, a dividir pelo número que se encontra na sua diagonal. (no exemplo: <mjx-container class="MathJax" jax="CHTML" style="font-size: 117.4%;"><mjx-math class="MJX-TEX"><mjx-mstyle><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D465 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mfrac space="4"><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-mn class="mjx-n"><mjx-c class="mjx-c35"></mjx-c><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="3"><mjx-c class="mjx-c36"></mjx-c></mjx-mn></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mn class="mjx-n"><mjx-c class="mjx-c38"></mjx-c></mjx-mn></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle></mjx-math></mjx-container>)</li>
+		<ul class='fa-ul'>
+			<li><i class='fa-li fa fa-check-square'></i> Na primeira linha começa por colocar o nome das grandezas em duas colunas diferentes. (no exemplo: farinha e ovos)</li>
+			<li><i class='fa-li fa fa-check-square'></i> Na segunda linha coloca os valores conhecidos. (no exemplo: 500 gr. de farinha corresponde a 8 ovos)</li>
+			<li><i class='fa-li fa fa-check-square'></i> Na terceira linha coloca um dos valores conhecidos e no valor desconhecido coloca um `x`. (no exemplo: queremos saber a quantidade de farinha que corresponde a 6 ovos)</li>
+			<li><i class='fa-li fa fa-check-square'></i> Por fim, o valor desconhecido, representado por `x`, é igual ao produto cruzado dos números que se encontram verticalmente e horizontalmente em relação ao `x`, a dividir pelo número que se encontra na sua diagonal. (no exemplo: `x=(500xx6)/8`)</li>
 		</ul>
 	</div><br>	
 	
-	<a href="/util/calculadora-regra-3-simples.php" id="facebookBtn" class="btn-u btn-u-blue rounded btn-u-lg btn-block" target="_blank"><i class="fa fa-facebook"></i> &nbsp;&nbsp;&nbsp;Achaste útil? Então partilha!</a>
+	<a href="https://www.facebook.com/sharer/sharer.php?u=https://www.matematica.pt/util/calculadora-regra-3-simples.php" id="facebookBtn" class="btn-u btn-u-blue rounded btn-u-lg btn-block" target="_blank"><i class="fa fa-facebook"></i> &nbsp;&nbsp;&nbsp;Achaste útil? Então partilha!</a>
 	<br><br>	
 	
 	<div class="headline-center-v2 margin-bottom-20">
@@ -1343,8 +687,13 @@ mjx-c.mjx-c37::before {
 	</div>
 	
 				<!-- Fundo Página Responsive -->
-				<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-				<ins class="adsbygoogle" style="display: block; height: 280px;" data-full-width-responsive="true" data-ad-format="auto" data-ad-client="ca-pub-6710216031332363" data-ad-slot="1818966531" data-adsbygoogle-status="done" data-ad-status="filled"><div id="aswift_2_host" style="border: none; height: 280px; width: 1200px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;border:0;width:1200px;height:280px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1200" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?gdpr=0&amp;client=ca-pub-6710216031332363&amp;output=html&amp;h=280&amp;slotname=1818966531&amp;adk=616878437&amp;adf=3017137674&amp;pi=t.ma~as.1818966531&amp;w=1200&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1670579781&amp;rafmt=1&amp;format=1200x280&amp;url=https%3A%2F%2Fwww.matematica.pt%2Futil%2Fcalculadora-regra-3-simples.php&amp;fwr=0&amp;fwrattr=true&amp;rpe=1&amp;resp_fmts=3&amp;wgl=1&amp;uach=WyJXaW5kb3dzIiwiMTUuMC4wIiwieDg2IiwiIiwiMTA4LjAuNTM1OS45OSIsW10sZmFsc2UsbnVsbCwiNjQiLFtbIk5vdD9BX0JyYW5kIiwiOC4wLjAuMCJdLFsiQ2hyb21pdW0iLCIxMDguMC41MzU5Ljk5Il0sWyJHb29nbGUgQ2hyb21lIiwiMTA4LjAuNTM1OS45OSJdXSxmYWxzZV0.&amp;dt=1670579781291&amp;bpp=2&amp;bdt=293&amp;idt=447&amp;shv=r20221206&amp;mjsv=m202212010101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D74e37fba87a7c888-227e0cca627f0025%3AT%3D1670260575%3ART%3D1670260575%3AS%3DALNI_MaeY8Xyrm2OGyT9oCYYdexNr18zxg&amp;gpic=UID%3D0000057799c59587%3AT%3D1670260575%3ART%3D1670579772%3AS%3DALNI_MaxJY-lAJm_T7liKuOuBUNUEppoTA&amp;prev_fmts=0x0%2C160x600&amp;nras=1&amp;correlator=7012208857050&amp;frm=20&amp;pv=1&amp;ga_vid=2038315379.1670260575&amp;ga_sid=1670579782&amp;ga_hid=1409138812&amp;ga_fc=1&amp;u_tz=-180&amp;u_his=2&amp;u_h=864&amp;u_w=1536&amp;u_ah=816&amp;u_aw=1536&amp;u_cd=24&amp;u_sd=0.938&amp;dmc=4&amp;adx=353&amp;ady=2706&amp;biw=2025&amp;bih=951&amp;scr_x=0&amp;scr_y=0&amp;eid=44759875%2C44759926%2C44759837%2C44773809%2C31071167%2C44774606&amp;oid=2&amp;pvsid=384640881362844&amp;tmod=1510296128&amp;uas=0&amp;nvt=1&amp;ref=https%3A%2F%2Fwww.matematica.pt%2Futil%2Fcalculadora-regra-3-simples.php&amp;eae=0&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1536%2C0%2C1536%2C816%2C2048%2C951&amp;vis=1&amp;rsz=%7C%7CEebr%7C&amp;abl=CS&amp;pfx=0&amp;fu=128&amp;bc=31&amp;ifi=3&amp;uci=a!3&amp;btvi=1&amp;fsb=1&amp;xpc=SrtxXEpHK0&amp;p=https%3A//www.matematica.pt&amp;dtd=458" data-google-container-id="a!3" data-google-query-id="COLd2dOi7PsCFUOXlQIdlncAtw" data-load-complete="true"></iframe></div></ins>
+				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<ins class="adsbygoogle"
+					 style="display:block"
+					 data-full-width-responsive="true"
+					 data-ad-format="auto"
+					 data-ad-client="ca-pub-6710216031332363"
+					 data-ad-slot="1818966531"></ins>
 				<script>
 					 (adsbygoogle = window.adsbygoogle || []).push({});
 				</script>
@@ -1353,8 +702,12 @@ mjx-c.mjx-c37::before {
 			<div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
 				<div id="pub_direito">			
 					<!-- Anuncio Lateral Direito -->
-					<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-					<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-full-width-responsive="true" data-ad-client="ca-pub-6710216031332363" data-ad-slot="6171185330" data-adsbygoogle-status="done" data-ad-status="filled"><div id="aswift_3_host" style="border: none; height: 600px; width: 160px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_3" name="aswift_3" style="left:0;position:absolute;top:0;border:0;width:160px;height:600px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="160" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?gdpr=0&amp;client=ca-pub-6710216031332363&amp;output=html&amp;h=600&amp;slotname=6171185330&amp;adk=1515125954&amp;adf=951403350&amp;pi=t.ma~as.6171185330&amp;w=160&amp;lmt=1670579781&amp;format=160x600&amp;url=https%3A%2F%2Fwww.matematica.pt%2Futil%2Fcalculadora-regra-3-simples.php&amp;fwrattr=true&amp;wgl=1&amp;uach=WyJXaW5kb3dzIiwiMTUuMC4wIiwieDg2IiwiIiwiMTA4LjAuNTM1OS45OSIsW10sZmFsc2UsbnVsbCwiNjQiLFtbIk5vdD9BX0JyYW5kIiwiOC4wLjAuMCJdLFsiQ2hyb21pdW0iLCIxMDguMC41MzU5Ljk5Il0sWyJHb29nbGUgQ2hyb21lIiwiMTA4LjAuNTM1OS45OSJdXSxmYWxzZV0.&amp;dt=1670579781293&amp;bpp=1&amp;bdt=296&amp;idt=491&amp;shv=r20221206&amp;mjsv=m202212010101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D74e37fba87a7c888-227e0cca627f0025%3AT%3D1670260575%3ART%3D1670260575%3AS%3DALNI_MaeY8Xyrm2OGyT9oCYYdexNr18zxg&amp;gpic=UID%3D0000057799c59587%3AT%3D1670260575%3ART%3D1670579772%3AS%3DALNI_MaxJY-lAJm_T7liKuOuBUNUEppoTA&amp;prev_fmts=0x0%2C160x600%2C1200x280&amp;nras=1&amp;correlator=7012208857050&amp;frm=20&amp;pv=1&amp;ga_vid=2038315379.1670260575&amp;ga_sid=1670579782&amp;ga_hid=1409138812&amp;ga_fc=1&amp;u_tz=-180&amp;u_his=2&amp;u_h=864&amp;u_w=1536&amp;u_ah=816&amp;u_aw=1536&amp;u_cd=24&amp;u_sd=0.938&amp;dmc=4&amp;adx=1862&amp;ady=86&amp;biw=2025&amp;bih=951&amp;scr_x=0&amp;scr_y=0&amp;eid=44759875%2C44759926%2C44759837%2C44773809%2C31071167%2C44774606&amp;oid=2&amp;pvsid=384640881362844&amp;tmod=1510296128&amp;uas=0&amp;nvt=1&amp;ref=https%3A%2F%2Fwww.matematica.pt%2Futil%2Fcalculadora-regra-3-simples.php&amp;eae=0&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1536%2C0%2C1536%2C816%2C2048%2C951&amp;vis=1&amp;rsz=%7C%7CfeE%7C&amp;abl=CF&amp;pfx=0&amp;fu=0&amp;bc=31&amp;ifi=4&amp;uci=a!4&amp;fsb=1&amp;xpc=lU3FFowG7R&amp;p=https%3A//www.matematica.pt&amp;dtd=499" data-google-container-id="a!4" data-google-query-id="CPrk2dOi7PsCFf-NlQIdQx4IxA" data-load-complete="true"></iframe></div></ins>
+					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+					<ins class="adsbygoogle"
+						 style="display:inline-block;width:160px;height:600px"
+						 data-full-width-responsive="true"
+						 data-ad-client="ca-pub-6710216031332363"
+						 data-ad-slot="6171185330"></ins>
 					<script>
 						 (adsbygoogle = window.adsbygoogle || []).push({});
 					</script>
@@ -1368,10 +721,10 @@ mjx-c.mjx-c37::before {
             <div class="container">
                 <div class="row">
                     <div class="col-sm-5">                     
-                        <p>MATEMATICA.PT © 2022 - Vitor Nunes<br>Se eliminar a causa, o efeito cessa.</p>
+                        <p>MATEMATICA.PT &copy; 2022 - Vitor Nunes<br>Se eliminar a causa, o efeito cessa.</p>
                     </div>
 					<div class="col-sm-3">
-						<button class="btn-u btn-u-orange rounded btn-block" data-toggle="modal" data-target="#SubscreverNews"><i class="fa fa-envelope-o"></i> Receber Novidades</button>					</div>	
+						<button class='btn-u btn-u-orange rounded btn-block' data-toggle='modal' data-target='#SubscreverNews'><i class='fa fa-envelope-o'></i> Receber Novidades</button>					</div>	
                     <div class="col-sm-4">  
                         <ul class="social-icons pull-right">
                             <li><a id="DivulgaFace" class="rounded-x social_facebook" href="https://www.facebook.com/sharer/sharer.php?u=www.matematica.pt" target="_blank" rel="noopener" data-original-title="Facebook"></a></li>
@@ -1397,7 +750,7 @@ mjx-c.mjx-c37::before {
 						<p><b>Subscreve</b> a nossa newsletter para estar informado sobre as mais recentes novidades!</p>
 						<form id="InscreverForm"> 	
 							<div class="input-group">
-								<input type="email" id="mailNews" class="form-control" placeholder="Endereço de Email" required="">
+								<input type="email" id="mailNews" class="form-control" placeholder="Endereço de Email" required>
 								<span class="input-group-btn">
 									<button class="btn-u" type="submit">Subscrever</button>
 								</span>
@@ -1412,26 +765,9 @@ mjx-c.mjx-c37::before {
 		</div>
 	</div>
 	
-</div><iframe name="googlefcPresent" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><style type="text/css" data-typed-js-css="true">
-        .typed-cursor{
-          opacity: 1;
-        }
-        .typed-cursor.typed-cursor--blink{
-          animation: typedjsBlink 0.7s infinite;
-          -webkit-animation: typedjsBlink 0.7s infinite;
-                  animation: typedjsBlink 0.7s infinite;
-        }
-        @keyframes typedjsBlink{
-          50% { opacity: 0.0; }
-        }
-        @-webkit-keyframes typedjsBlink{
-          0% { opacity: 1; }
-          50% { opacity: 0.0; }
-          100% { opacity: 1; }
-        }
-      </style>
+</div>
 
-<script src="/plugins/back-to-top.min.js"></script>
+<script src="plugins/back-to-top.min.js"></script>
 
 <script>
 	$(document).ready(function() {
@@ -1457,5 +793,5 @@ mjx-c.mjx-c37::before {
 	});
 </script>
 
-
-	<ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><div id="aswift_0_host" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?gdpr=0&amp;client=ca-pub-6710216031332363&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;lmt=1670579781&amp;plat=9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1081344%2C32%3A32%2C41%3A32&amp;format=0x0&amp;url=https%3A%2F%2Fwww.matematica.pt%2Futil%2Fcalculadora-regra-3-simples.php&amp;ea=0&amp;pra=5&amp;wgl=1&amp;uach=WyJXaW5kb3dzIiwiMTUuMC4wIiwieDg2IiwiIiwiMTA4LjAuNTM1OS45OSIsW10sZmFsc2UsbnVsbCwiNjQiLFtbIk5vdD9BX0JyYW5kIiwiOC4wLjAuMCJdLFsiQ2hyb21pdW0iLCIxMDguMC41MzU5Ljk5Il0sWyJHb29nbGUgQ2hyb21lIiwiMTA4LjAuNTM1OS45OSJdXSxmYWxzZV0.&amp;dt=1670579781282&amp;bpp=16&amp;bdt=285&amp;idt=305&amp;shv=r20221206&amp;mjsv=m202212010101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D74e37fba87a7c888-227e0cca627f0025%3AT%3D1670260575%3ART%3D1670260575%3AS%3DALNI_MaeY8Xyrm2OGyT9oCYYdexNr18zxg&amp;gpic=UID%3D0000057799c59587%3AT%3D1670260575%3ART%3D1670579772%3AS%3DALNI_MaxJY-lAJm_T7liKuOuBUNUEppoTA&amp;nras=1&amp;correlator=7012208857050&amp;frm=20&amp;pv=2&amp;ga_vid=2038315379.1670260575&amp;ga_sid=1670579782&amp;ga_hid=1409138812&amp;ga_fc=1&amp;u_tz=-180&amp;u_his=2&amp;u_h=864&amp;u_w=1536&amp;u_ah=816&amp;u_aw=1536&amp;u_cd=24&amp;u_sd=0.938&amp;dmc=4&amp;adx=-12245933&amp;ady=-12245933&amp;biw=2025&amp;bih=951&amp;scr_x=0&amp;scr_y=0&amp;eid=44759875%2C44759926%2C44759837%2C44773809%2C31071167%2C44774606&amp;oid=2&amp;pvsid=384640881362844&amp;tmod=1510296128&amp;uas=0&amp;nvt=1&amp;fsapi=1&amp;ref=https%3A%2F%2Fwww.matematica.pt%2Futil%2Fcalculadora-regra-3-simples.php&amp;eae=2&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1536%2C0%2C1536%2C816%2C2048%2C951&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=32768&amp;bc=31&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=407" data-google-container-id="a!1" data-load-complete="true"></iframe></div></ins><div id="topcontrol" title="Scroll Back to Top" style="position: fixed; bottom: 5px; right: 5px; opacity: 1; cursor: pointer;"></div><iframe name="__tcfapiLocator" src="about:blank" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe name="googlefcInactive" src="about:blank" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe name="googlefcLoaded" src="about:blank" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" data-anchor-status="displayed" data-anchor-shown="true" style="display: none; width: 100% !important; height: 95px !important; bottom: 0px; clear: none !important; float: none !important; left: 0px; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1; overflow: visible !important; padding: 0px !important; position: fixed; right: auto !important; top: auto !important; vertical-align: baseline !important; visibility: visible !important; z-index: 2147483647; background: rgb(250, 250, 250) !important;" data-ad-status="filled"><div class="grippy-host"></div><div id="aswift_4_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none !important; height: 90px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;"><iframe id="aswift_4" name="aswift_4" style="width: 728px !important; height: 90px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/html/r20221206/r20110914/zrt_lookup.html?fsb=1#RS-0-&amp;adk=1812271801&amp;client=ca-pub-6710216031332363&amp;fa=1&amp;ifi=5&amp;uci=a!5&amp;btvi=2&amp;xpc=9zzwwYASSo&amp;p=https%3A//www.matematica.pt" data-google-container-id="a!5" data-google-query-id="CIDJ2dOi7PsCFTW4lQIdByQC4Q" data-load-complete="true"></iframe></div></ins><iframe src="https://www.google.com/recaptcha/api2/aframe" width="0" height="0" style="display: none;"></iframe></body><iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20221206/r20190131/zrt_lookup.html" style="display: none;"></iframe></html>
+</body>
+</html>	
