@@ -1,0 +1,20 @@
+ .alagrid input[type="tel"] {width:2.5rem; text-align:center;}
+ .zaverka {clear:both; padding:0.75rem 0}
+ #latex0 {padding:0.75rem 0}
+ #latex0, #latex1 {width:100%; border:0;}
+ #latex1 {display:none}
+ ::placeholder {color:#bdc3c7;}     
+ #none {display:none} 
+ #plusko {cursor:pointer} 
+ #infobox {display:none}
+ #infobox input[readonly] {border:1px solid #666666; margin:0; background:#d4e6f1}
+ #infobox {background:#d4e6f1; padding:0.5rem 0.3rem; border:1px solid } 
+ td.ods1 {padding-left:25px}
+ td.ods2 {padding-left:50px}
+
+@media (max-width:75em) {
+  .alagrid {padding:0; width:100%; border:0; min-width:19.5rem}
+  .alagrid input[type="tel"] {width:2rem; padding:0.75rem 0.25rem; margin-bottom:0.75rem}
+}
+                             
+

@@ -1,0 +1,11 @@
+ .kalk_300 input[type="tel"] {text-align:center; margin:0.75rem 0}
+ .uzky_300 {width:2.5em !important}
+ .siroky_300 {width:5em !important}
+ .latex {width:100%; border:0}
+ 
+ @media (max-width:75em) {
+   .promenna {border:0; padding:0}
+ }
+ @media (min-width:75em) {
+   .gridbox300 {display:grid; grid-gap:1rem; grid-template-columns:repeat(auto-fit, minmax(max(19rem, calc(50% - 1rem)), 1fr));}
+ }
