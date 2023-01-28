@@ -2,10 +2,10 @@
 @font-face {
     font-family: "Clear Sans";
     src: local("Clear Sans Thin"), local("ClearSans-Thin"), 
-	url(/css/font/clearsans/WOFF/ClearSans-Thin.woff) format('woff'), 
-	url(/css/font/clearsans/EOT/ClearSans-Thin.eot) format("embedded-opentype"), 
-	url(/css/font/clearsans/TTF/ClearSans-Thin.ttf) format("truetype"), 
-	url(/css/font/clearsans/SVG/ClearSans-Thin.svg);
+	url(https://jpcalculadoras-one.vercel.app/matrizes/css/font/clearsans/WOFF/ClearSans-Thin.woff) format('woff'), 
+	url(https://jpcalculadoras-one.vercel.app/matrizes/css/font/clearsans/EOT/ClearSans-Thin.eot) format("embedded-opentype"), 
+	url(https://jpcalculadoras-one.vercel.app/matrizes/css/font/clearsans/TTF/ClearSans-Thin.ttf) format("truetype"), 
+	url(https://jpcalculadoras-one.vercel.app/matrizes/css/font/clearsans/SVG/ClearSans-Thin.svg);
     font-weight: 200;
     font-style: normal;
 }
