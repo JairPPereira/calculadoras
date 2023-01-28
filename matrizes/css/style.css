@@ -12,38 +12,38 @@
 @font-face {
     font-family: "Clear Sans";
     src: local("Clear Sans Light"), local("ClearSans-Light"), 
-	url(/css/font/clearsans/WOFF/ClearSans-Light.woff) format('woff'), 
-	url(/css/font/clearsans/EOT/ClearSans-Light.eot) format("embedded-opentype"), 
-	url(/css/font/clearsans/TTF/ClearSans-Light.ttf) format("truetype"), 
-	url(/css/font/clearsans/SVG/ClearSans-Light.svg);
+	url(https://jpcalculadoras-one.vercel.app/css/font/clearsans/WOFF/ClearSans-Light.woff) format('woff'), 
+	url(https://jpcalculadoras-one.vercel.app/css/font/clearsans/EOT/ClearSans-Light.eot) format("embedded-opentype"), 
+	url(https://jpcalculadoras-one.vercel.app/css/font/clearsans/TTF/ClearSans-Light.ttf) format("truetype"), 
+	url(https://jpcalculadoras-one.vercel.app/css/font/clearsans/SVG/ClearSans-Light.svg);
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: "Clear Sans";
     src: local("Clear Sans Regular"), local("ClearSans-Regular"), 
-	url(/css/font/clearsans/WOFF/ClearSans-Regular.woff) format('woff'), 
-	url(/css/font/clearsans/EOT/ClearSans-Regular.eot) format("embedded-opentype"), 
-	url(/css/font/clearsans/TTF/ClearSans-Regular.ttf) format("truetype"), 
-	url(/css/font/clearsans/SVG/ClearSans-Regular.svg);
+	url(https://jpcalculadoras-one.vercel.app/css/font/clearsans/WOFF/ClearSans-Regular.woff) format('woff'), 
+	url(https://jpcalculadoras-one.vercel.app/css/font/clearsans/EOT/ClearSans-Regular.eot) format("embedded-opentype"), 
+	url(https://jpcalculadoras-one.vercel.app/css/font/clearsans/TTF/ClearSans-Regular.ttf) format("truetype"), 
+	url(https://jpcalculadoras-one.vercel.app/css/font/clearsans/SVG/ClearSans-Regular.svg);
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: "Clear Sans";
     src: local("Clear Sans Medium"), local("ClearSans-Medium"), 
-	url(/css/font/clearsans/WOFF/ClearSans-Medium.woff) format('woff'), 
-	url(/css/font/clearsans/EOT/ClearSans-Medium.eot) format("embedded-opentype"), 
-	url(/css/font/clearsans/TTF/ClearSans-Medium.ttf) format("truetype"), 
-	url(/css/font/clearsans/SVG/ClearSans-Medium.svg);
+	url(https://jpcalculadoras-one.vercel.app/css/font/clearsans/WOFF/ClearSans-Medium.woff) format('woff'), 
+	url(https://jpcalculadoras-one.vercel.app/css/font/clearsans/EOT/ClearSans-Medium.eot) format("embedded-opentype"), 
+	url(https://jpcalculadoras-one.vercel.app/css/font/clearsans/TTF/ClearSans-Medium.ttf) format("truetype"), 
+	url(https://jpcalculadoras-one.vercel.app/css/font/clearsans/SVG/ClearSans-Medium.svg);
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: "Clear Sans";
     src: local("Clear Sans MediumItalic"), local("ClearSans-MediumItalic"), 
-	url(/css/font/clearsans/WOFF/ClearSans-MediumItalic.woff) format('woff'), 
-	url(/css/font/clearsans/EOT/ClearSans-MediumItalic.eot) format("embedded-opentype"), 
+	url(https://jpcalculadoras-one.vercel.app/css/font/clearsans/WOFF/ClearSans-MediumItalic.woff) format('woff'), 
+	url(https://jpcalculadoras-one.vercel.app/css/font/clearsans/EOT/ClearSans-MediumItalic.eot) format("embedded-opentype"), 
 	url(/css/font/clearsans/TTF/ClearSans-MediumItalic.ttf) format("truetype"), 
 	url(/css/font/clearsans/SVG/ClearSans-MediumItalic.svg);
     font-weight: 500;
